@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-// const CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -20,10 +20,10 @@ const plugins = [
   new webpack.DefinePlugin({
     PRODUCTION: JSON.stringify(true),
   }),
-  // new CompressionPlugin({
-  //   algorithm: "gzip",
-  //   test: /\.(js|css|html|svg)$/i,
-  // }),
+  new CompressionPlugin({
+    algorithm: "gzip",
+    test: /\.(js|css|html|svg)$/i,
+  }),
 ];
 
 module.exports = {

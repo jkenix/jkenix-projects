@@ -161,36 +161,39 @@
   .l-feni-partners .fp-desc {
     width: 100%;
   }
+  // Forms (Общий класс)
+  .l-feni-form {
+    > .l-feedback-row.top {
+      width: 100%;
+      padding-right: 0;
+    }
+    > .l-feedback-row.right {
+      padding-right: 0;
+    }
+    > .l-feedback-row.right,
+    > .l-feedback-row.left {
+      width: 100%;
+    }
+  }
   // === Discuss ===
   .l-fdp-content {
     align-items: center;
     flex-direction: column;
     row-gap: 40px;
-    > .fdp-content-info {
+    > .l-fdp-content-info {
       width: 100%;
       text-align: center;
     }
-    > .fdp-content-form {
+    > .l-fdp-content-form {
       width: 70%;
     }
   }
   .form-img-block {
     display: none;
   }
-  .l-feedback-row.top {
-    width: 100%;
-    padding-right: 0;
-  }
-  .l-feedback-row.right {
-    padding-right: 0;
-  }
-  .l-feedback-row.right,
-  .l-feedback-row.left {
-    width: 100%;
-  }
   .l-feedback-row.message {
     height: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .checkbox-row {
     padding-left: 0;
@@ -422,7 +425,7 @@
     }
   }
   // === Dicuss ===
-  .l-fdp-content > .fdp-content-form {
+  .l-fdp-content > .l-fdp-content-form {
     width: 80%;
   }
   // === Services ===
@@ -435,6 +438,10 @@
   .l-benefits-items > .benefits-item,
   .l-pp-identify > .l-unique-project {
     width: 100%;
+  }
+  // Form
+  .l-order-form > .section-title {
+    font-size: 1.2rem;
   }
 }
 // 320px

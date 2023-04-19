@@ -120,6 +120,22 @@
 .wdl {
   opacity: 0;
 }
+// Order Form
+.of-is-visible {
+  display: block;
+}
+.fof-close {
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  &:hover {
+    svg path {
+      stroke: $b1;
+    }
+  }
+}
 /* === Keyframes === */
 // Preloader
 @keyframes preloader-spin {

@@ -13,11 +13,11 @@ const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 const Footer = lazy(() => import("./components/main/Footer.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
-const Logos = lazy(() => import("./pages/nested/Logos.jsx"));
-const Web_design = lazy(() => import("./pages/nested/Web_design.jsx"));
-const Identify = lazy(() => import("./pages/nested/Identify.jsx"));
-const Illustrations = lazy(() => import("./pages/nested/Illustrations.jsx"));
-const Presentations = lazy(() => import("./pages/nested/Presentations.jsx"));
+const Logos = lazy(() => import("./pages/services/Logos.jsx"));
+const Web_design = lazy(() => import("./pages/services/Web_design.jsx"));
+const Identify = lazy(() => import("./pages/services/Identify.jsx"));
+const Illustrations = lazy(() => import("./pages/services/Illustrations.jsx"));
+const Presentations = lazy(() => import("./pages/services/Presentations.jsx"));
 
 export default function App() {
   return (

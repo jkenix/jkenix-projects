@@ -2,7 +2,8 @@
 @import "mixins_var.scss";
 /* Классы тем */
 // Общие тэги
-span, a {
+span,
+a {
   color: $b1;
 }
 // === Body ===
@@ -50,6 +51,24 @@ body {
 }
 .btn-tab-link {
   color: $ff5;
+}
+// Forms
+.label-feedback,
+.form-input {
+  color: $we5;
+}
+.form-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $we5;
+}
+[class="form-input"]:invalid {
+  border-bottom: 1px solid red;
+  
+}
+[class="form-input"]:valid {
+  border-bottom: 1px solid rgb(0, 255, 0);
 }
 /* Стили цветов */
 // === Заголовки, описание ===
@@ -106,15 +125,6 @@ body {
   > .fdp-title,
   > .fdp-desc {
     color: $we5;
-  }
-}
-.l-feedback-row {
-  .label-feedback,
-  .form-input {
-    color: $we5;
-  }
-  > .form-input {
-    border-bottom: 1px solid $we5;
   }
 }
 .feni-checkbox-agree {
