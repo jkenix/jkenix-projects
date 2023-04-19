@@ -74,6 +74,11 @@
     animation-delay: 0.5s;
   }
 }
+// Во избежание появления со сменой ориентации
+// При просмотре всплывающей формы в "Сервисах"
+.ham-is-hide {
+  display: none;
+}
 .nav-is-active {
   animation: fadeMe 300ms linear forwards;
   animation-name: menuAnim;

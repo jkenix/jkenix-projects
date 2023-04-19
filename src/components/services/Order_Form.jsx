@@ -5,7 +5,7 @@ import Show_Order_Form from "../../js/scripts.js";
 export default function Order_Form(props) {
   return (
     <>
-      <div className="l-feni-section l-fm">
+      <div className="l-of-content l-feni-section l-fm">
         <button
           className="fof-close"
           onClick={() => {

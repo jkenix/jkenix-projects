@@ -3,4 +3,6 @@ export default function Show_Order_Form() {
   body.classList.toggle("overflow-is-hidden");
   let fof = document.querySelector(".l-of-wrapper");
   fof.classList.toggle("of-is-visible");
+  let ham = document.querySelector(".hamburger");
+  ham.classList.toggle("ham-is-hide");
 }
