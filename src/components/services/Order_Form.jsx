@@ -27,6 +27,7 @@ export default function Order_Form(props) {
           form_link_service="https://formspree.io/f/moqzyjjq"
           title={props.form_title}
           value={props.form_service_name}
+          textarea_rows={props.textarea_rows_value}
         />
       </div>
     </>

@@ -69,7 +69,7 @@ export default function Form(props) {
             name="Client-message"
             maxLength="700"
             cols="40"
-            rows="10"
+            rows={props.textarea_rows}
             className="form-input message-input"
             placeholder="Введите ваше сообщение"></textarea>
         </div>
@@ -87,3 +87,4 @@ export default function Form(props) {
     </>
   );
 }
+Form.defaultProps = {textarea_rows: "10"};

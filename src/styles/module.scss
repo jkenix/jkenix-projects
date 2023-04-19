@@ -262,8 +262,9 @@
   cursor: default;
   text-decoration: underline;
   text-decoration-color: rgb(0, 255, 0);
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 1rem;
+  overflow: hidden;
   &:focus {
     outline: none;
   }

@@ -278,21 +278,25 @@ export default function Illustrations() {
                   </h2>
                 </>
               }
+              textarea_rows_value="5"
               form_service_name={
                 <>
                   <div className="l-service-info-row">
-                    <label
-                      htmlFor="Service-name"
-                      className="label-feedback label-service-name">
-                      Выбранная услуга по разработке иллюстрации:
-                    </label>
-                    <textarea
+                    <input
+                      id="Service-category"
+                      name="Service-category"
+                      type="hidden"
+                      className="form-input"
+                      value="Иллюстрации"
+                      maxLength="255"
+                    />
+                    <input
                       id="Service-name"
                       name="Service-name"
-                      className="form-input message-input"
+                      type="hidden"
+                      className="form-input"
                       value={Service_name}
                       maxLength="255"
-                      readOnly
                     />
                   </div>
                 </>

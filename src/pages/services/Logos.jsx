@@ -223,7 +223,7 @@ export default function Logos() {
               />
               <Order_Card
                 title="Максимальный"
-                 Click={() => {
+                Click={() => {
                   set_Service_name(`Услуга "Максимальный"`);
                   Show_Order_Form();
                 }}
@@ -283,21 +283,25 @@ export default function Logos() {
                   </h2>
                 </>
               }
+              textarea_rows_value="5"
               form_service_name={
                 <>
                   <div className="l-service-info-row">
-                    <label
-                      htmlFor="Service-name"
-                      className="label-feedback label-service-name">
-                      Выбранная услуга по разработке логотипа:
-                    </label>
-                    <textarea
+                    <input
+                      id="Service-category"
+                      name="Service-category"
+                      type="hidden"
+                      className="form-input"
+                      value="Логотипы"
+                      maxLength="255"
+                    />
+                    <input
                       id="Service-name"
                       name="Service-name"
-                      className="form-input message-input"
+                      type="hidden"
+                      className="form-input"
                       value={Service_name}
                       maxLength="255"
-                      readOnly
                     />
                   </div>
                 </>
