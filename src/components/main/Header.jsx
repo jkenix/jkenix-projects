@@ -51,7 +51,7 @@ export default function Header() {
               +7-963-728-66-90
             </a>
             <a
-              href="#discuss-project"
+              href="#discuss"
               className="btn-head btn-link btn-b55 "
               title="Обсудить проект">
               Обсудить проект

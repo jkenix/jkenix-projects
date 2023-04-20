@@ -28,7 +28,7 @@ export default function Home() {
           />
           <meta
             name="description"
-            content="Задизайним проект по высшему разряду!"
+            content="Задизайним ваш проект по высшему разряду!"
           />
         </Helmet>
         <main className="l-main">

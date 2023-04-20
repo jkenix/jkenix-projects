@@ -5,7 +5,6 @@ export default function Form(props) {
   return (
     <>
       <motion.form
-      
         action={props.form_link_service}
         method="POST"
         className={props.class}

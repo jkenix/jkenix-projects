@@ -11,7 +11,7 @@ export default function Discuss(props) {
       <section className="l-feni-discuss-project" id="discuss">
         <div className="l-fdp-content l-feni-section l-fm">
           <motion.div
-            className="fdp-content-info"
+            className="l-fdp-content-info"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
@@ -31,7 +31,7 @@ export default function Discuss(props) {
           <Form
             class="l-fdp-content-form l-feni-form"
             initial={{ y: 100, opacity: 0 }}
-            form_link_service = "https://formspree.io/f/mgebyljo"
+            form_link_service="https://formspree.io/f/mgebyljo"
           />
         </div>
       </section>

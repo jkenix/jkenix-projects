@@ -62,6 +62,9 @@
   .l-unique-project {
     width: 61.7%;
   }
+  .l-fdp-content-info > .fdp-title {
+    font-size: 1.6rem;
+  }
   // === About ===
   .l-feni-about-skills {
     row-gap: 20px;
@@ -175,6 +178,13 @@
       width: 100%;
     }
   }
+  // Checkbox общий класс
+  .checkbox-row {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
   // === Discuss ===
   .l-fdp-content {
     align-items: center;
@@ -186,6 +196,12 @@
     }
     > .l-fdp-content-form {
       width: 70%;
+      > .checkbox-row {
+        padding-top: 15px;
+        > .feni-checkbox-agree {
+          font-size: 1rem;
+        }
+      }
     }
   }
   .form-img-block {
@@ -194,16 +210,6 @@
   .l-feedback-row.message {
     height: 100px;
     padding-bottom: 50px;
-  }
-  .checkbox-row {
-    padding-left: 0;
-    padding-top: 20px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    > p {
-      font-size: 1rem;
-    }
   }
   // === Portfolio ===
   .port-works-tabs > .btn-tab {
