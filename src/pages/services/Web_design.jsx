@@ -136,17 +136,17 @@ export default function Web_design() {
             </motion.h2>
             <div className="l-project-prices">
               <Order_Card
-                title="Корпоративный веб-сайт"
+                title="Лендинг"
                 Click={() => {
-                  set_Service_name(`Услуга "Корпоративный веб-сайт"`);
+                  set_Service_name(`Услуга "Лендинг"`);
                   Show_Order_Form();
                 }}
-                price="От 75000₽"
+                price="От 35000₽"
                 points={
                   <>
                     <li className="project-point">
                       <Check />
-                      <span className="pp-desc small-section">До 20 дней</span>
+                      <span className="pp-desc small-section">До 7 дней</span>
                     </li>
                     <li className="project-point">
                       <Check />
@@ -168,17 +168,17 @@ export default function Web_design() {
                 }
               />
               <Order_Card
-                title="Лендинг"
+                title="Корпоративный веб-сайт"
                 Click={() => {
-                  set_Service_name(`Услуга "Лендинг"`);
+                  set_Service_name(`Услуга "Корпоративный веб-сайт"`);
                   Show_Order_Form();
                 }}
-                price="От 35000₽"
+                price="От 75000₽"
                 points={
                   <>
                     <li className="project-point">
                       <Check />
-                      <span className="pp-desc small-section">До 7 дней</span>
+                      <span className="pp-desc small-section">До 20 дней</span>
                     </li>
                     <li className="project-point">
                       <Check />

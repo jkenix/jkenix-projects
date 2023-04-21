@@ -209,7 +209,7 @@
   }
   .l-feedback-row.message {
     height: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
   // === Portfolio ===
   .port-works-tabs > .btn-tab {
@@ -279,7 +279,7 @@
         width: 70%;
       }
       &.message {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
       }
     }
   }
@@ -533,11 +533,8 @@
         width: 85%;
       }
     }
-    > .checkbox-row {
-      padding-top: 10px;
-      > .feni-checkbox-agree {
-        font-size: 0.7rem;
-      }
+    > .checkbox-row > .feni-checkbox-agree {
+      font-size: 0.7rem;
     }
   }
 }
