@@ -605,6 +605,21 @@
     white-space: nowrap;
   }
 }
+// Политика Конфиденциальности
+// Публичная оферта
+.l-policy {
+  @include flexcolumn();
+}
+.l-privacy-policy,
+.l-public-offer {
+  padding-bottom: 100px;
+  > .section-title {
+    font-weight: 900;
+  }
+  > .section-desc {
+    margin-top: 25px;
+  }
+}
 // === Not found ===
 .l-not-found {
   padding-top: 50px;

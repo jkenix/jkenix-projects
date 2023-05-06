@@ -12,6 +12,8 @@ const About = lazy(() => import("./pages/About.jsx"));
 const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 const Footer = lazy(() => import("./components/main/Footer.jsx"));
 const Discuss = lazy(() => import("./components/main/Discuss.jsx"));
+const Offer = lazy(() => import("./pages/Offer.jsx"));
+const Privacy_Policy = lazy(() => import("./pages/Privacy_Policy.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 const Logos = lazy(() => import("./pages/services/Logos.jsx"));
@@ -119,10 +121,14 @@ export default function App() {
                     />
                   }></Route>
               ))}
+              <Route path="/public-offer/" element={<Offer />}></Route>
+              <Route
+                path="/privacy-policy/"
+                element={<Privacy_Policy />}></Route>
               <Route path="*" element={<NotFound />} />
               <Route path="" element={<NotFound />} />
             </Routes>
-            <Discuss/>
+            <Discuss />
             <Footer location={location} key={location.pathname + "2"} />
           </AnimatePresence>
         </Suspense>

@@ -539,6 +539,13 @@
       font-size: 0.7rem;
     }
   }
+  // Policy
+  .l-privacy-policy,
+  .l-public-offer {
+    > .section-title {
+      font-size: 1.3rem;
+    }
+  }
 }
 // 320px
 @media (max-width: 320px) {
