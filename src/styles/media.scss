@@ -101,6 +101,16 @@
     }
   }
   // === Main ===
+  // Общие классы
+  .l-fs-content {
+    max-width: 100%;
+    > .fs-desc {
+      max-width: 90%;
+    }
+  }
+  .l-fs-img {
+    display: none;
+  }
   // === Home ===
   // Feni preview
   .l-fp-section-title {
@@ -305,6 +315,9 @@
     .btn-fnf {
       margin-left: auto;
     }
+    > .fnf-img {
+      display: none;
+    }
   }
 }
 // Landscape 1024 (Form Services)
@@ -390,16 +403,6 @@
   // .l-feni-start block
   .l-feni-start {
     padding-left: 35px;
-    padding-right: 30px;
-  }
-  .l-fs-content {
-    max-width: 100%;
-    > .fs-desc {
-      max-width: 90%;
-    }
-  }
-  .l-fs-img {
-    display: none;
   }
   // === Home ===
   // Feni info
@@ -448,16 +451,16 @@
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
   }
   // --- Services (Вложенные !!!) ---
+  // Slider
+  .l-process-dev-slider {
+    padding-right: 30px;
+  }
   // Prices
   .l-process-dev > .pd-title {
     padding-right: 30px;
   }
-  .l-price-project,
-  .l-pp-identify > .l-unique-project {
+  .l-price-project {
     width: 41.3%;
-  }
-  .l-prices {
-    padding-left: 30px;
   }
   // Benefits
   .l-benefits {
@@ -515,8 +518,7 @@
   // --- Services (Вложенные !!!) ---
   // Prices, Benefits
   .l-price-project,
-  .l-benefits-items > .benefits-item,
-  .l-pp-identify > .l-unique-project {
+  .l-benefits-items > .benefits-item {
     width: 100%;
   }
   // Form

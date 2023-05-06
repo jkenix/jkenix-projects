@@ -10,7 +10,6 @@ import feni_start from "../img/feni-start.webp";
 import more from "../img/more.svg";
 import partners from "../img/partners.webp";
 
-const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
 import ScrollToTop from "../components/main/ScrollToTop.jsx";
 
 export default function Home() {
@@ -20,15 +19,15 @@ export default function Home() {
       <HelmetProvider>
         <Helmet>
           <title>Feni - Студия веб-дизайна</title>
-          <meta property="og:title" content="Студия веб-дизайна Feni" />
-          {/* <meta property="og:url" content="URL/" /> */}
+          <meta property="og:title" content="Студия веб-дизайна Feni Studio" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/" />
           <meta
             name="og:description"
-            content="Мы помогаем зарабатывать в интернете с ярким веб-дизайном!"
+            content="Feni - российская студия веб-дизайна. Оказываем услуги высочайшего качества в области веб-дизайна нашим клиентам из России!"
           />
           <meta
             name="description"
-            content="Задизайним ваш проект по высшему разряду!"
+            content="Feni Studio - российская студия веб-дизайна. Поможем Вам разработать свой уникальный веб-дизайн!"
           />
         </Helmet>
         <main className="l-main">
@@ -42,7 +41,7 @@ export default function Home() {
                 Мы помогаем зарабатывать в интернете
               </h2>
               <button
-                className="btn-link btn-bw55"
+                className="btn-link btn-bw41"
                 onClick={() => {
                   document.getElementById("discuss").scrollIntoView();
                 }}>
@@ -65,8 +64,8 @@ export default function Home() {
               className="feni-info-title section-title"
               initial={{ y: 200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}>
-              Мы онлайн дизайн студия, которая помогает нашим клиентам по всему
-              миру получать осмысленный дизайн, создавая значимые связи между
+              Мы студия Web-дизайна, которая помогает нашим клиентам по всей
+              России получать осмысленный дизайн, создавая значимые связи между
               людьми и брендами!
             </motion.h2>
             <motion.p
@@ -74,10 +73,10 @@ export default function Home() {
               initial={{ y: 200, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}>
-              Выполняем проекты для ведущих веб-студий по всему миру в качестве
-              субподрядчиков. Ключевой состав команды работает с момента
-              основания компании. Мы гарантируем индивидуальный подход к каждому
-              новому веб-сайту, логотипу, и/или фирменному стилю.
+              Выполняем проекты для клиентов по всей России. В составе команды
+              присутствуют опытные разработчики и контент-менеджеры. Мы
+              гарантируем индивидуальный подход к каждому новому веб-сайту,
+              логотипу, презентации, иллюстрации и фирменному стилю.
             </motion.p>
           </section>
           <section className="l-feni-preview">
@@ -86,7 +85,7 @@ export default function Home() {
               initial={{ y: 150, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}>
-              <h2 className="fp-title section-title">Наши работы</h2>
+              <h2 className="fp-title section-title">Наше портфолио</h2>
               <div className="fp-works-tabs works-tabs">
                 {TabList_main.map((tab, i) => (
                   <button
@@ -119,10 +118,9 @@ export default function Home() {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
-                      title="Все работы">
-                      Все работы
+                      className="btn-link btn-b41 btn-focus"
+                      to={"/portfolio/all_works/"}>
+                      Просмотреть все наши работы
                     </Link>
                   </motion.div>
                 );
@@ -138,17 +136,17 @@ export default function Home() {
             viewport={{ once: true }}>
             <h2 className="feni-briefs-title section-title">Брифы</h2>
             <p className="feni-briefs-desc section-desc">
-              Помогите нам, сделать ваш проект лучше! После заполнения брифа, Мы
-              свяжемся с вами в ближайшее время!
+              Помогите нам улучшить нашу работу! Заполните бриф и Мы свяжемся с
+              Вами в ближайшее время!
             </p>
             <div className="feni-briefs-content">
               <a
                 href="https://forms.gle/neVqs5xMX5GU2nbT6"
                 className="fb-info l-fm fbi-main">
                 <span className="fb-count small-section">01</span>
-                <span className="fb-title">Веб Дизайн</span>
+                <span className="fb-title">Веб-сайт</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку веб дизайна
+                  Бриф на разработку веб-сайта
                 </span>
               </a>
               <a
@@ -157,7 +155,7 @@ export default function Home() {
                 <span className="fb-count small-section">02</span>
                 <span className="fb-title">Лого</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку логотипа
+                  Бриф на разработку логотипа
                 </span>
               </a>
               <a
@@ -166,7 +164,7 @@ export default function Home() {
                 <span className="fb-count small-section">03</span>
                 <span className="fb-title">Иллюстрация</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку иллюстрации
+                  Бриф на разработку иллюстрации
                 </span>
               </a>
               <a
@@ -175,7 +173,7 @@ export default function Home() {
                 <span className="fb-count small-section">04</span>
                 <span className="fb-title">Презентация</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку презентации
+                  Бриф на разработку презентации
                 </span>
               </a>
               <a
@@ -184,7 +182,7 @@ export default function Home() {
                 <span className="fb-count small-section">05</span>
                 <span className="fb-title">Айдентика</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку айдентики
+                  Бриф на разработку айдентики
                 </span>
               </a>
             </div>
@@ -197,8 +195,8 @@ export default function Home() {
               viewport={{ once: true }}>
               <h2 className="fp-title section-title">Клиенты</h2>
               <p className="fp-desc section-desc l-feni-section">
-                Гордимся сотрудничеством с лидерами своих отраслей и счастливы
-                быть их digital-партнером
+                Гордимся работой с лидерами своей отрасли и счастливы быть их
+                близким партнером!
               </p>
             </motion.div>
             <div className="feni-partners-img img__rubber">
@@ -207,7 +205,6 @@ export default function Home() {
               </LazyLoad>
             </div>
           </section>
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

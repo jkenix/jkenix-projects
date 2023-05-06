@@ -20,7 +20,6 @@ const Order_Form = lazy(() =>
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
 
 export default function Identify(props) {
   const card_link = "https://forms.gle/BzdVa4kz1FFwy36P7";
@@ -33,12 +32,18 @@ export default function Identify(props) {
       <HelmetProvider>
         <Helmet>
           <title>Айдентика</title>
-          <meta property="og:title" content="Feni Design - Айдентика" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
-          {/* <meta name="og:description" content="" /> */}
+          <meta property="og:title" content="Feni Studio - Айдентика" />
+          <meta
+            property="og:url"
+            content="https://jkenix-project.pages.dev/services/identify/"
+          />
+          <meta
+            name="og:description"
+            content="Закажите дизайн своего фирменного стиля у Feni Studio!"
+          />
           <meta
             name="description"
-            content="Закажи собственный фирменный стиль от Feni Design!"
+            content="Закажи собственный дизайн фирменного стиля от Feni Studio!"
           />
         </Helmet>
         <main className="l-main l-identify">
@@ -135,7 +140,7 @@ export default function Identify(props) {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
+                      className="btn-link btn-b41 btn-focus"
                       to={"/portfolio/identify/"}
                       title="Все работы">
                       Все работы
@@ -314,7 +319,6 @@ export default function Identify(props) {
             />
           </div>
           <Benefits />
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

@@ -11,34 +11,23 @@ body {
   background-color: $we5;
 }
 // === Общие классы кнопок ===
-.btn-b55 {
+.btn-b41 {
   color: $wff;
-  background-color: $b55;
+  background-color: $b41;
   &:hover,
   &:focus-visible {
     background-color: $ff5;
   }
 }
-.btn-bw55 {
+.btn-bw41 {
   color: $b1;
   background-color: $we5;
-  border: 1px solid $b55;
+  border: 1px solid $b41;
   &:hover,
   &:focus-visible {
-    background-color: $b55;
+    background-color: $b41;
     color: $we5;
   }
-}
-.btn-w {
-  color: $sap;
-  background-color: $we5;
-}
-.btn-sap {
-  background-color: $sap;
-  color: $wff;
-}
-.btn-ff42 {
-  border: 2px solid $ff42;
 }
 // === Home/Portfolio кнопки ===
 .btn-tab {
@@ -90,7 +79,7 @@ body {
   }
 }
 .nav-is-active {
-  background-color: $b55;
+  background-color: $b41;
   & > a {
     color: $wff;
   }
@@ -119,7 +108,7 @@ body {
 }
 // === Discuss ===
 .l-feni-discuss-project {
-  background-color: $b55;
+  background-color: $b41;
 }
 .l-fdp-content-info {
   > .fdp-title,
@@ -136,7 +125,7 @@ body {
   &:hover,
   &:focus-visible {
     background-color: $we5;
-    color: $b55;
+    color: $b41;
   }
 }
 // Общие модули для формы
@@ -152,7 +141,7 @@ body {
 }
 // === Work-desc === (Main, Portfolio)
 .work-desc {
-  background-color: $b55;
+  background-color: $b41;
   > &-title,
   > &-info {
     color: $we5;

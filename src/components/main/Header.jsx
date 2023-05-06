@@ -27,19 +27,25 @@ export default function Header() {
       <header className="l-header">
         <div className="l-header-wr">
           <Link className="logo" to="/">
-            <img src={logo} alt="Feni logo" width="65" height="65" loading="eager"/>
+            <img
+              src={logo}
+              alt="Feni logo"
+              width="65"
+              height="65"
+              loading="eager"
+            />
           </Link>
           <nav className="header-menu">
-            <NavLink className="nav-item" to="/portfolio/all_works/" title="Портфолио">
+            <NavLink className="nav-item" to="/portfolio/all_works/">
               Портфолио
             </NavLink>
-            <NavLink className="nav-item" to="/services/" title="Услуги и цены">
-              Услуги и цены
+            <NavLink className="nav-item" to="/services/">
+              Наши услуги
             </NavLink>
-            <NavLink className="nav-item" to="/about/" title="О нас">
+            <NavLink className="nav-item" to="/about/">
               Мы
             </NavLink>
-            <NavLink className="nav-item" to="/contacts/" title="Контакты">
+            <NavLink className="nav-item" to="/contacts/">
               Контакты
             </NavLink>
           </nav>
@@ -50,10 +56,7 @@ export default function Header() {
               title="Позвонить">
               +7-963-728-66-90
             </a>
-            <a
-              href="#discuss"
-              className="btn-head btn-link btn-b55 "
-              title="Обсудить проект">
+            <a href="#discuss" className="btn-head btn-link btn-b41 ">
               Обсудить проект
             </a>
           </div>

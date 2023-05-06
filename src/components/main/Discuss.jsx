@@ -15,9 +15,9 @@ export default function Discuss(props) {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
-            <h2 className="fdp-title section-title">Обсудить проект</h2>
+            <h2 className="fdp-title section-title">Обсудить ваш проект</h2>
             <p className="fdp-desc section-desc">
-              Крутые проекты начинаются с заполнения этой формы
+              Напишите нам ваши предложения по проекту
             </p>
             <LazyLoad height={366} offset={100} className="rel form-img-block">
               <img

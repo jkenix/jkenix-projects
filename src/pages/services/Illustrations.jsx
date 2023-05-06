@@ -20,7 +20,6 @@ const Order_Form = lazy(() =>
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
 
 export default function Illustrations() {
   const card_link = "https://forms.gle/G1F61kMXz7n8ZJhh7";
@@ -33,18 +32,18 @@ export default function Illustrations() {
       <HelmetProvider>
         <Helmet>
           <title>Иллюстрации</title>
-          <meta property="og:title" content="Feni Design - Иллюстрации" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
-          {/* <meta name="og:description" content="" /> */}
+          <meta property="og:title" content="Feni Studio - Иллюстрации" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/services/illustrations/" />
+          <meta name="og:description" content="Закажите уникальный дизайн иллюстрации у Feni Studio!" />
           <meta
             name="description"
-            content="Закажи собственные иллюстрации от Feni Design!"
+            content="Закажи собственный дизайн иллюстрации от Feni Studio!"
           />
         </Helmet>
         <main className="l-main lillustrations">
           <Service_Preview
             title="Разработка Иллюстраций"
-            desc="Сделайте свой сайт, рекламу или приложение более запоминающимся и узнаваемым с помощью наших уникальных иллюстраций!"
+            desc="Сделайте ваш проект более запоминающимся и узнаваемым с помощью наших потрясающих иллюстраций!"
             brif_link={card_link}
             img_content={
               <>
@@ -119,7 +118,7 @@ export default function Illustrations() {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
+                      className="btn-link btn-b41 btn-focus"
                       to={"/portfolio/illustrations/"}
                       title="Все работы">
                       Все работы
@@ -304,7 +303,6 @@ export default function Illustrations() {
             />
           </div>
           <Benefits />
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

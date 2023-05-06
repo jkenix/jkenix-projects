@@ -15,7 +15,7 @@ export default function Order_Card(props) {
           <span className="price section-title">{props.price}</span>
         </div>
         <button
-          className="btn-order btn-link btn-bw55 btn-focus"
+          className="btn-order btn-link btn-bw41 btn-focus"
           onClick={props.Click}>
           Заказать
         </button>

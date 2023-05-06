@@ -1,9 +1,8 @@
-import React, {lazy} from "react";
+import React, { lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 import ScrollToTop from "../components/main/ScrollToTop.jsx";
-import Discuss from "../components/main/Discuss.jsx";
 
 import more from "../img/more.svg";
 
@@ -13,7 +12,10 @@ export default function Product(props) {
       <Helmet>
         <title>Feni - {`${props.title}`}</title>
         <meta property="og:title" content={`${props.title}`} />
-        {/* <meta property="og:url" content="URL/" /> */}
+        <meta
+          property="og:url"
+          content={"https://jkenix-project.pages.dev/" + props.url}
+        />
         <meta name="og:description" content={`${props.desc}`} />
         <meta
           name="description"
@@ -39,7 +41,6 @@ export default function Product(props) {
             <img src={more} width={"25"} height={"8"} alt="more arrow" />
           </Link>
         </div>
-        <Discuss />
       </main>
       <ScrollToTop />
     </HelmetProvider>

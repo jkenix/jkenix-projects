@@ -11,10 +11,11 @@ const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
 const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 const Footer = lazy(() => import("./components/main/Footer.jsx"));
+const Discuss = lazy(() => import("./components/main/Discuss.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 const Logos = lazy(() => import("./pages/services/Logos.jsx"));
-const Web_design = lazy(() => import("./pages/services/Web_design.jsx"));
+const Web_sites = lazy(() => import("./pages/services/Web_sites.jsx"));
 const Identify = lazy(() => import("./pages/services/Identify.jsx"));
 const Illustrations = lazy(() => import("./pages/services/Illustrations.jsx"));
 const Presentations = lazy(() => import("./pages/services/Presentations.jsx"));
@@ -93,9 +94,7 @@ export default function App() {
                 }></Route>
               <Route path="/services/" element={<Services />}></Route>
               <Route path="services/logos/" element={<Logos />}></Route>
-              <Route
-                path="services/web-design/"
-                element={<Web_design />}></Route>
+              <Route path="services/websites/" element={<Web_sites />}></Route>
               <Route path="services/identify/" element={<Identify />}></Route>
               <Route
                 path="services/illustrations/"
@@ -113,6 +112,7 @@ export default function App() {
                   element={
                     <Product
                       title={aw.title}
+                      url={aw.url}
                       src={aw.main_src}
                       desc={aw.desc}
                       client={aw.client}
@@ -122,6 +122,7 @@ export default function App() {
               <Route path="*" element={<NotFound />} />
               <Route path="" element={<NotFound />} />
             </Routes>
+            <Discuss/>
             <Footer location={location} key={location.pathname + "2"} />
           </AnimatePresence>
         </Suspense>

@@ -20,7 +20,6 @@ const Order_Form = lazy(() =>
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
 
 export default function Web_design() {
   const card_link = "https://forms.gle/neVqs5xMX5GU2nbT6";
@@ -32,20 +31,19 @@ export default function Web_design() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Веб-дизайн</title>
-          <meta property="og:title" content="Feni Design - Веб-дизайн" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/sercices" /> */}
-          {/* <meta name="og:description" content="Услуги и цены Feni Design, " /> */}
+          <title>Веб-сайты</title>
+          <meta property="og:title" content="Feni Studio - Веб-сайты" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/services/websites/" />
+          <meta name="og:description" content="Закажи дизайн своего сайта от Feni Studio! " />
           <meta
             name="description"
-            content="Закажи собственный веб-дизайн от Feni Design!"
+            content="Закажи собственный веб-дизайн для сайта у студии Feni!"
           />
         </Helmet>
         <main className="l-main l-web-design">
           <Service_Preview
-            title="Разработка Веб Дизайна"
-            desc={`"Если вашего бизнеса нет в Интернете, то ваш бизнес не будет
-          работать" - Билл Гейтс`}
+            title="Разработка Веб-сайтов"
+            desc={`Разработаем для вас яркие и привлекательные веб-сайты!`}
             brif_link={card_link}
             img_content={
               <>
@@ -64,7 +62,7 @@ export default function Web_design() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <h2 className="pd-title section-title">
-              Как выглядит Процесс разработки веб-дизайна:
+              Как выглядит Процесс разработки веб-сайта:
             </h2>
             <div className="l-process-dev-slider">
               <Slider {...Slider_settings}>
@@ -114,7 +112,7 @@ export default function Web_design() {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
+                      className="btn-link btn-b41 btn-focus"
                       to={"/portfolio/websites/"}
                       title="Все работы">
                       Все работы
@@ -311,7 +309,6 @@ export default function Web_design() {
             />
           </div>
           <Benefits />
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

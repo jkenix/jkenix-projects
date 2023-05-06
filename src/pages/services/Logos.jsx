@@ -20,7 +20,6 @@ const Order_Form = lazy(() =>
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
 
 export default function Logos() {
   const card_link = "https://forms.gle/Tvioeac6DhDZxu9N9";
@@ -33,18 +32,24 @@ export default function Logos() {
       <HelmetProvider>
         <Helmet>
           <title>Логотипы</title>
-          <meta property="og:title" content="Feni Design - Логотипы" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
-          {/* <meta name="og:description" content="" /> */}
+          <meta property="og:title" content="Feni Studio - Логотипы" />
+          <meta
+            property="og:url"
+            content="https://jkenix-project.pages.dev/services/logos/"
+          />
+          <meta
+            name="og:description"
+            content="Закажите уникальный дизайн логотипа у Feni Studio!"
+          />
           <meta
             name="description"
-            content="Закажи собственные логотипы от Feni Design!"
+            content="Закажи собственный дизайн логотипа от Feni Studio!"
           />
         </Helmet>
         <main className="l-main l-logos">
           <Service_Preview
             title="Разработка Логотипа"
-            desc="Вы хорошо знаете свой бизнес, а мы знаем как сделать хороший дизайн! И будем рады сделать лого для вашей: Компании, Приложения или Сайта."
+            desc="Мы будем рады сделать для Вас красочный и запоминающийся логотип!"
             brif_link={card_link}
             img_content={
               <>
@@ -119,7 +124,7 @@ export default function Logos() {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
+                      className="btn-link btn-b41 btn-focus"
                       to={"/portfolio/logos/"}
                       title="Все работы">
                       Все работы
@@ -309,7 +314,6 @@ export default function Logos() {
             />
           </div>
           <Benefits />
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

@@ -16,7 +16,7 @@ export default function Unique_Order_Card(props) {
         <p className="unique-desc section-desc">
           Мы в деле! Давайте обсудим условия подходящие, именно для вас!
         </p>
-        <button className="btn-order btn-link btn-bw55 btn-focus" onClick={props.Click}>
+        <button className="btn-order btn-link btn-bw41 btn-focus" onClick={props.Click}>
           Заказать
         </button>
       </motion.div>

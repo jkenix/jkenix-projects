@@ -94,6 +94,9 @@ export default function Footer() {
         <Link to="/" className="footer-link" title="Публичная Оферта">
           Публичная Оферта
         </Link>
+        <Link to="/" className="footer-link" title="Публичная Оферта">
+          Политика конфиденциальности
+        </Link>
         <a
           href="https://github.com/jkenix"
           className="footer-link"

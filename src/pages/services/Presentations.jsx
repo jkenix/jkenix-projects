@@ -20,7 +20,6 @@ const Order_Form = lazy(() =>
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
 
 export default function Presentations() {
   const card_link = "https://forms.gle/Kf5J7RAoe2ZuEigc7";
@@ -33,12 +32,12 @@ export default function Presentations() {
       <HelmetProvider>
         <Helmet>
           <title>Презентации</title>
-          <meta property="og:title" content="Feni Design - Презентации" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
-          {/* <meta name="og:description" content="" /> */}
+          <meta property="og:title" content="Feni Studio - Презентации" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/services/presentations/" />
+          <meta name="og:description" content="Закажите уникальный дизайн презентации у Feni Studio!" />
           <meta
             name="description"
-            content="Закажи собственные презентации от Feni Design!"
+            content="Закажи собственный дизайн презентации от Feni Studio!"
           />
         </Helmet>
         <main className="l-main l-presentations">
@@ -113,7 +112,7 @@ export default function Presentations() {
                     viewport={{ once: true }}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 btn-focus"
+                      className="btn-link btn-b41 btn-focus"
                       to={"/portfolio/presentations/"}
                       title="Все работы">
                       Все работы
@@ -308,7 +307,6 @@ export default function Presentations() {
             />
           </div>
           <Benefits />
-          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>
