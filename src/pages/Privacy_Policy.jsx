@@ -1,7 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент страницы "Политика конфиденциальности"
 export default function Conf_Policy() {
   return (
     <>
@@ -42,7 +41,6 @@ export default function Conf_Policy() {
           </p>
         </motion.section>
       </main>
-      <ScrollToTop />
     </>
   );
 }

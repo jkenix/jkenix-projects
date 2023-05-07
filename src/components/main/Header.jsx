@@ -1,7 +1,8 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
-
+import React from "react"; // Подключение модулей React
+import { NavLink, Link } from "react-router-dom"; // Подключение модулей React
+// Импорт изображений
 import logo from "../../img/feni-logo.svg";
+// Вызов функции активации меню 
 function NavActive() {
   let ham = document.querySelector(".hamburger");
   let body = document.querySelector("body");
@@ -21,6 +22,7 @@ function NavActive() {
     }
   });
 }
+// Компонент верхней части страницы
 export default function Header() {
   return (
     <>

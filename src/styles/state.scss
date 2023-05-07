@@ -46,6 +46,9 @@
 .btn-tab {
   &.active {
     color: $ff5;
+    span {
+      color: $ff5;
+    }
   }
 }
 // === Header ===

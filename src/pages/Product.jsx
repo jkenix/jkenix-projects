@@ -1,11 +1,9 @@
-import React, { lazy } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+import React, { lazy } from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { Link } from "react-router-dom"; // Подключение модулей React
+// Импорт изображений
 import more from "../img/more.svg";
-
+// Компонент страницы с информацией о работе из "Портфолио"
 export default function Product(props) {
   return (
     <HelmetProvider>
@@ -42,7 +40,6 @@ export default function Product(props) {
           </Link>
         </div>
       </main>
-      <ScrollToTop />
     </HelmetProvider>
   );
 }

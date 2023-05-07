@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React from "react"; // Подключение модулей React
+import { Link } from "react-router-dom"; // Подключение модулей React
+// Импорт изображений
 import logo from "../../img/feni-logo.svg";
 import vklogo from "../../img/vk-logo.svg";
 import telegram from "../../img/telegram-logo.svg";
 import wapp from "../../img/wapp-logo.svg";
-
+// Компонент нижней части страницы
 export default function Footer() {
   return (
     <footer className="l-footer">

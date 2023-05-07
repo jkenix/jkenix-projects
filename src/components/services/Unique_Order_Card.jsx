@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент блока карточки заказа "Уникальный проект"
 export default function Unique_Order_Card(props) {
   return (
     <>

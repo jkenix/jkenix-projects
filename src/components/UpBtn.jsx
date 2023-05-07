@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from "react"; // Подключение модулей React
+// Компонент кнопки прокрутки страницы вверх
 export default function UpBtn(props) {
   return (
     <>

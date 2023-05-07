@@ -1,23 +1,24 @@
-import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { motion } from "framer-motion";
-
+import React from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { motion } from "framer-motion"; // Импорт модулей Helmet
+// Импорт компонента блоков сервисов
 import Service from "../components/Service.jsx";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+// Компонент страницы "Наши услуги"
 export default function Services() {
   return (
     <>
       <HelmetProvider>
         <Helmet>
           <title>Услуги - Feni</title>
+          <meta property="og:title" content="Услуги - Feni Design Studio" />
           <meta
-            property="og:title"
-            content="Услуги - Feni Design Studio"
+            property="og:url"
+            content="https://jkenix-project.pages.dev/services/"
           />
-          <meta property="og:url" content="https://jkenix-project.pages.dev/services/" />
-          <meta name="og:description" content="Закажите услугу по веб-дизайну у Feni Studio!" />
+          <meta
+            name="og:description"
+            content="Закажите услугу по веб-дизайну у Feni Studio!"
+          />
           <meta
             name="description"
             content="Закажи услугу по веб-дизайну у студии Feni!"
@@ -28,7 +29,9 @@ export default function Services() {
             className="l-fs-title l-feni-section l-fm"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
-            <h1 className="fs-title">Выберите услуги по дизайну от Feni Studio!</h1>
+            <h1 className="fs-title">
+              Выберите услуги по дизайну от Feni Studio!
+            </h1>
           </motion.section>
           <section className="l-feni-services l-feni-section l-fm">
             <Service
@@ -58,7 +61,6 @@ export default function Services() {
             />
           </section>
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

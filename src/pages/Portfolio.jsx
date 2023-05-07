@@ -1,13 +1,12 @@
-import React, { lazy, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-
+import React, { lazy, useState } from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { NavLink } from "react-router-dom"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт информации о Портфолио для страницы "Портфолио"
 import { TabList_portfolio } from "../js/data.jsx";
-
+// Импорт компонента прокрутки страницы вверх
 import UpBtn from "../components/UpBtn.jsx";
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+// Компонент страницы "Портфолио"
 export default function Portfolio(props) {
   const [currentTab, setCurrentTab] = useState(props.tabid);
   return (
@@ -68,7 +67,6 @@ export default function Portfolio(props) {
             })}
           </section>
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

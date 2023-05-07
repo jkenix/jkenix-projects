@@ -1,14 +1,12 @@
-import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { motion } from "framer-motion";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+import React from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт изображений
 import contacts_img from "../img/feni-contacts.webp";
 import vklogo from "../img/vk-logo.svg";
 import telegram from "../img/telegram-logo.svg";
 import wapp from "../img/wapp-logo.svg";
-
+// Компонент страницы "Контакты"
 export default function Contacts() {
   return (
     <>
@@ -72,7 +70,6 @@ export default function Contacts() {
             </div>
           </motion.section>
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

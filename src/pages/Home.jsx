@@ -1,17 +1,15 @@
-import { React, useState, lazy } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-
+import { React, useState, lazy } from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { Link } from "react-router-dom"; // Подключение модулей React
+import LazyLoad from "react-lazy-load"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт информации о Портфолио для "Главной страницы"
 import { TabList_main } from "../js/data.jsx";
-import LazyLoad from "react-lazy-load";
-
+// Импорт изображений
 import feni_start from "../img/feni-start.webp";
 import more from "../img/more.svg";
 import partners from "../img/partners.webp";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+// Компонент Главной страницы
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("tab1");
   return (
@@ -206,7 +204,6 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

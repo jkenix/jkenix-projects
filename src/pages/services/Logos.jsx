@@ -1,31 +1,34 @@
-import React, { useState, lazy } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useState, lazy } from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { Link } from "react-router-dom"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт стилей React-slick
 import "../../styles/lib/slick.css";
 import "../../styles/lib/slick-theme.css";
+// Импорт слайдера React-slick
 import Slider from "react-slick";
-
+// Импорт изображений
 import logomake from "../../img/logomake.webp";
 import checkbox from "../../img/checkbox.svg";
-
+// Импорт компонентов
 import Service_Preview from "../../components/services/Service_Preview.jsx";
-import { TabList_main, Slider_settings } from "../../js/data.jsx";
 import Order_Card from "../../components/services/Order_Card.jsx";
 // import Unique_Order_Card from "../../components/services/Unique_Order_Card.jsx";
-
-import ScrollToTop from "../../components/main/ScrollToTop.jsx";
 const Order_Form = lazy(() =>
   import("../../components/services/Order_Form.jsx")
 );
 import Show_Order_Form from "../../js/scripts";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
-
+// Импорт информации о Портфолио и настроек для Слайдера
+import { TabList_main, Slider_settings } from "../../js/data.jsx";
+// Компонент страницы "Логотипы" в сервисах
 export default function Logos() {
-  const card_link = "https://forms.gle/Tvioeac6DhDZxu9N9";
+  const card_link = "https://forms.gle/Tvioeac6DhDZxu9N9"; // Ссылка на гугл форму
+  // Функция вызова галочки в описаниях к услуге
   function Check() {
     return <img src={checkbox} width="15" height="15" alt="checkbox" />;
   }
+  // Функция хранения имени переменной сервиса
   const [Service_name, set_Service_name] = useState("");
   return (
     <>
@@ -315,7 +318,6 @@ export default function Logos() {
           </div>
           <Benefits />
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

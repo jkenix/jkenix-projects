@@ -1,7 +1,7 @@
-import React from "react";
-import Form from "../Form.jsx";
-import Show_Order_Form from "../../js/scripts.js";
-
+import React from "react"; // Подключение модулей React
+import Form from "../Form.jsx"; // Импорт компонента формы
+import Show_Order_Form from "../../js/scripts.js"; // Импорт компонента показывания формы заказа
+// Компонент всплывающего окна формы заказа
 export default function Order_Form(props) {
   return (
     <>

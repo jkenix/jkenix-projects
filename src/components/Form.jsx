@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент блока формы
 export default function Form(props) {
   return (
     <>

@@ -1,7 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент страницы "Публичная оферта"
 export default function Offer() {
   return (
     <>
@@ -245,7 +244,6 @@ export default function Offer() {
           </p>
         </motion.section>
       </main>
-      <ScrollToTop />
     </>
   );
 }

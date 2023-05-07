@@ -1,11 +1,9 @@
-import React, { lazy } from "react";
-import { Link } from "react-router-dom";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { motion } from "framer-motion";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-const MotionComp = motion(Link);
-
+import React, { lazy } from "react"; // Подключение модулей React
+import { Link } from "react-router-dom"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+const MotionComp = motion(Link); // Смешивание Link и компонента Motion
+// Компонент страницы "Мы"
 export default function About() {
   return (
     <>
@@ -99,7 +97,6 @@ export default function About() {
             <span>Посмотреть все наши работы</span>
           </MotionComp>
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

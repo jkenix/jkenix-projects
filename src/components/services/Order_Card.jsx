@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент блока карточки заказа
 export default function Order_Card(props) {
   return (
     <>

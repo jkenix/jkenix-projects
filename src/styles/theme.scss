@@ -36,6 +36,9 @@ body {
   &:hover,
   &:focus-visible {
     color: $ff5;
+    span {
+      color: $ff5;
+    }
   }
 }
 .btn-tab-link {
@@ -54,7 +57,6 @@ body {
 }
 [class="form-input"]:invalid {
   border-bottom: 1px solid red;
-  
 }
 [class="form-input"]:valid {
   border-bottom: 1px solid rgb(0, 255, 0);

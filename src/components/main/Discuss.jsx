@@ -1,10 +1,10 @@
-import React from "react";
-import LazyLoad from "react-lazy-load";
-import { motion } from "framer-motion";
+import React from "react"; // Подключение модулей React
+import LazyLoad from "react-lazy-load"; // Подключение модулей Webpack
+import { motion } from "framer-motion"; // // Подключение Библиотеки Framer-motion
 
-import Form from "../Form.jsx";
-import mail_form from "../../img/mail-form.webp";
-
+import Form from "../Form.jsx"; // Импорт компонента формы
+import mail_form from "../../img/mail-form.webp"; // Импорт изображения
+// Компонент блока с формой "Обсудить проект"
 export default function Discuss(props) {
   return (
     <>
