@@ -139,9 +139,9 @@ export default function App() {
               <Route path="" element={<NotFound />} />
             </Routes>
             {/* Вызов компонента Discuss с формой отправки */}
-            <Discuss />
+            <Discuss key={location.pathname + "2"} />
             {/* Вызов компонента Footer (Нижней части страницы) */}
-            <Footer location={location} key={location.pathname + "2"} />
+            <Footer location={location} key={location.pathname + "3"} />
             <ScrollToTop />
           </AnimatePresence>
         </Suspense>

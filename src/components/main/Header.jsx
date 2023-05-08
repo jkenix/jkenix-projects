@@ -2,22 +2,25 @@ import React from "react"; // Подключение модулей React
 import { NavLink, Link } from "react-router-dom"; // Подключение модулей React
 // Импорт изображений
 import logo from "../../img/feni-logo.svg";
-// Вызов функции активации меню 
+// Вызов функции активации меню
 function NavActive() {
-  let ham = document.querySelector(".hamburger");
-  let body = document.querySelector("body");
-  let header = document.querySelector(".l-header");
-  let headermenu = document.querySelector(".header-menu");
-
+  let ham = document.querySelector(".hamburger"); // Выбор класса hamburger
+  let body = document.querySelector("body"); // Выбор тега body (тела всего документа "index.html")
+  let header = document.querySelector(".l-header"); // Выбор класса l-header
+  let headermenu = document.querySelector(".header-menu"); // Выбор класса header-menu
+  // Добавление и удаление классов при нажатии гамбургера
   ham.classList.toggle("ham-is-active");
   body.classList.toggle("overflow-is-hidden");
   header.classList.toggle("head-is-switch");
   headermenu.classList.toggle("nav-is-active");
-
+  // Если выбран элемент меню, то меню закрывается
   headermenu.addEventListener("click", function () {
     var currentTarget = event.target;
-    // If click A elem - close menu
+    // Если нажат тег A (элемент меню) - закрыть меню
     if (currentTarget.tagName === "A") {
+      // Активируется класс вызова функции,
+      // переключающий имена классов в
+      // начальное значение
       NavActive();
     }
   });
