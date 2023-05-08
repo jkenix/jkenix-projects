@@ -13,9 +13,16 @@ export default function Form(props) {
         viewport={{ once: true }}>
         {props.title}
         <div className="l-feedback-row top">
-          <label className="label-feedback" htmlFor="Client-name">
-            Ваше имя*
-          </label>
+          <div className="l-client-info">
+            <label className="label-feedback" htmlFor="Client-name">
+              Ваше имя
+            </label>
+            <label
+              className="label-feedback label-required"
+              htmlFor="Client-name">
+              *
+            </label>
+          </div>
           <input
             type="text"
             id="Client-name"
@@ -28,9 +35,16 @@ export default function Form(props) {
           />
         </div>
         <div className="l-feedback-row right">
-          <label className="label-feedback" htmlFor="Client-phone">
-            Телефон*
-          </label>
+          <div className="l-client-info">
+            <label className="label-feedback" htmlFor="Client-phone">
+              Телефон
+            </label>
+            <label
+              className="label-feedback label-required"
+              htmlFor="Client-name">
+              *
+            </label>
+          </div>
           <input
             type="tel"
             id="Client-phone"
@@ -44,9 +58,16 @@ export default function Form(props) {
           />
         </div>
         <div className="l-feedback-row left">
-          <label className="label-feedback" htmlFor="Client-email">
-            Почта*
-          </label>
+          <div className="l-client-info">
+            <label className="label-feedback" htmlFor="Client-email">
+              Почта
+            </label>
+            <label
+              className="label-feedback label-required"
+              htmlFor="Client-name">
+              *
+            </label>
+          </div>
           <input
             type="email"
             id="Client-email"
@@ -86,4 +107,4 @@ export default function Form(props) {
     </>
   );
 }
-Form.defaultProps = {textarea_rows: "10"};
+Form.defaultProps = { textarea_rows: "10" };

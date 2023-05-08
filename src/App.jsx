@@ -1,6 +1,8 @@
-import React, { Suspense, lazy } from "react"; // Подключение модулей React, Webpack
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"; // Подключение модулей React, Webpack
-import { AnimatePresence } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Подключение модулей React, Webpack
+import React, { Suspense, lazy } from "react";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+// Подключение Библиотеки Framer-motion
+import { AnimatePresence } from "framer-motion";
 import Header from "./components/main/Header.jsx"; // Импортирование Header
 import { all_works } from "./js/data.jsx"; // Импортирование списка cо всеми данными портфолио
 // Импорт компонента прокрутки страницы вверх
@@ -140,7 +142,7 @@ export default function App() {
             <Discuss />
             {/* Вызов компонента Footer (Нижней части страницы) */}
             <Footer location={location} key={location.pathname + "2"} />
-            <ScrollToTop/>
+            <ScrollToTop />
           </AnimatePresence>
         </Suspense>
       </BrowserRouter>

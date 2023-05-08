@@ -45,6 +45,9 @@ body {
   color: $ff5;
 }
 // Forms
+.l-client-info > .label-required {
+  color: red;
+}
 .label-feedback,
 .form-input {
   color: $we5;
