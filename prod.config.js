@@ -123,7 +123,14 @@ module.exports = {
     // Указание выходных файлов для ресурсов
     path: path.resolve(__dirname, "docs"),
     // assetModuleFilename: "assets/[hash][ext][query]",
-    assetModuleFilename: "./img/[name][ext]",
+    assetModuleFilename: (pathData) => {
+      const filepath = path
+        .dirname(pathData.filename)
+        .split("/")
+        .slice(1)
+        .join("/");
+      return `${filepath}/[name][ext]`;
+    },
     clean: true,
     publicPath: "/",
   },

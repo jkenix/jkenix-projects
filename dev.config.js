@@ -29,15 +29,14 @@ module.exports = {
   output: {
     // Указание выходных файлов для ресурсов
     publicPath: "/",
-    assetModuleFilename: "./img/[name][ext]",
-    // assetModuleFilename: (pathData) => {
-    //   const filepath = path
-    //     .dirname(pathData.filename)
-    //     .split("/")
-    //     .slice(1)
-    //     .join("/");
-    //   return `${filepath}/[name][ext]`;
-    // },
+    assetModuleFilename: (pathData) => {
+      const filepath = path
+        .dirname(pathData.filename)
+        .split("/")
+        .slice(1)
+        .join("/");
+      return `${filepath}/[name][ext]`;
+    },
   },
   devServer: {
     // Настройки сервера для разработки
