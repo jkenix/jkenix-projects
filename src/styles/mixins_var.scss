@@ -1,0 +1,11 @@
+/* Миксины */
+@mixin flexcolumn() {
+  display: flex;
+  flex-direction: column;
+}
+// Переменные
+$b1: #1c1d28;
+$b41: #4180b3;
+$ff5: #ff5c66;
+$we5: #e5e5e5;
+$wff: #f5f5f5;

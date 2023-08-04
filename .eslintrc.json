@@ -1,0 +1,16 @@
+{
+  "env": {
+    // Ууказание используемых сред
+    "browser": true, // Глобальные переменные браузера
+    "commonjs": true, // Глобальные переменные CommonJS
+    "es2022": true // Глобальные переменные ECMAScript 2022
+  },
+  // Использование плагинов
+  // Поддержка работы с Eslint, Pretteir и React
+  "extends": ["eslint:recommended", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest" // Включает последнюю поддерживаемую версию ECMAScript
+  },
+  "rules": {}
+}
