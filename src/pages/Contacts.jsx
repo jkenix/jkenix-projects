@@ -14,7 +14,7 @@ export default function Contacts() {
         <Helmet>
           <title>Контакты - Feni</title>
           <meta property="og:title" content="Контакты - Feni Studio" />
-          <meta property="og:url" content="https://jkenix-project.pages.dev/contacts/" />
+          <meta property="og:url" content="https://feni.pages.dev/contacts/" />
           <meta name="og:description" content="Контактные данные студии Feni" />
           <meta name="description" content="Свяжитесь со студией Feni!" />
         </Helmet>

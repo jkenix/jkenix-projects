@@ -20,7 +20,7 @@ export default function Portfolio(props) {
           />
           <meta
             property="og:url"
-            content={"https://jkenix.github.io/portfolio" + props.tabpath}
+            content={"https://feni.pages.dev/portfolio" + props.tabpath}
           />
           <meta
             name="og:description"

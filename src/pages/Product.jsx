@@ -12,7 +12,7 @@ export default function Product(props) {
         <meta property="og:title" content={`${props.title}`} />
         <meta
           property="og:url"
-          content={"https://jkenix-project.pages.dev/" + props.url}
+          content={"https://feni.pages.dev/" + props.url}
         />
         <meta name="og:description" content={`${props.desc}`} />
         <meta

@@ -11,7 +11,7 @@ export default function About() {
         <Helmet>
           <title>О нас - Feni</title>
           <meta property="og:title" content="Feni - О нас" />
-          <meta property="og:url" content="https://jkenix-project.pages.dev/about/" />
+          <meta property="og:url" content="https://feni.pages.dev/about/" />
           <meta name="og:description" content="Познакомьтесь со студией web-дизайна Feni!" />
           <meta name="description" content="Узнайте больше о студии web-дизайна Feni!" />
         </Helmet>

@@ -18,7 +18,7 @@ export default function Home() {
         <Helmet>
           <title>Feni - Студия веб-дизайна</title>
           <meta property="og:title" content="Студия веб-дизайна Feni Studio" />
-          <meta property="og:url" content="https://jkenix-project.pages.dev/" />
+          <meta property="og:url" content="https://feni.pages.dev/" />
           <meta
             name="og:description"
             content="Feni - российская студия веб-дизайна. Оказываем услуги высочайшего качества в области веб-дизайна нашим клиентам из России!"
