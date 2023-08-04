@@ -6,7 +6,7 @@
     "node-sass": "^7.0.1",
     "sass": "^1.63.6",
     "sass-convert": "^0.5.2",
-    "vite": "^4.4.4"
+    "vite": "^4.4.8"
   },
   "devDependencies": {
     "browserslist": "^4.21.10",
