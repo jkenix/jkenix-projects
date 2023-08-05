@@ -147,8 +147,8 @@ body {
 // === Work-desc === (Main, Portfolio)
 .work-desc {
   background-color: $b41;
-  > &-title,
-  > &-info {
+  > .work-desc-title,
+  > .work-desc-info {
     color: $we5;
   }
 }
