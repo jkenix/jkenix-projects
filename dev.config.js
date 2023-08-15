@@ -1,8 +1,9 @@
 // Dev
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { fileURLToPath } from "url";
+import { insertHtml, h } from "vite-plugin-insert-html";
 // Plugins
-import { createHtmlPlugin } from "vite-plugin-html";
 import viteHtmlResolveAlias from "vite-plugin-html-resolve-alias";
 
 export default defineConfig({
@@ -20,21 +21,28 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@img": resolve(__dirname, "src/img/"),
-      "@js": resolve(__dirname, "src/js/"),
+      "@img": resolve(__dirname, "/src/img/"),
+      "@s": resolve(__dirname, "/src/styles/"),
+      "@js": resolve(__dirname, "/src/js/"),
     },
   },
   plugins: [
-    createHtmlPlugin({
-      minify: true,
-      entry: "src/index.js",
-      template: "index.html",
-      inject: {
-        data: {
-          injectScript: `<script src="@js/scripts.js"></script>`,
-        },
-      },
-    }),
     viteHtmlResolveAlias(),
+    // insertHtml({
+    //   body: [
+    //     h("script", {
+    //       type: "module",
+    //       crossorigin: "",
+    //       src: "/src/index.js",
+    //     }),
+    //   ],
+    // }),
   ],
+  // build: {
+  //   rollupOptions: {
+  //     input: {
+  //       // appSchoool: fileURLToPath(new URL("./index2.html", import.meta.url)),
+  //     },
+  //   },
+  // },
 });

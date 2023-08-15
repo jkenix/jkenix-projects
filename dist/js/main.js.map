@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sources":["../../src/js/data.jsx"],"sourcesContent":["function changeBackground(color) {\r\n  document.body.style.background = color;\r\n}\r\nchangeBackground(\"#e5e3e3\");\r\n"],"names":["changeBackground","color"],"mappings":"ssBAAA,SAASA,EAAiBC,EAAO,CACtB,SAAA,KAAK,MAAM,WAAaA,CACnC,CACAD,EAAiB,SAAS"}

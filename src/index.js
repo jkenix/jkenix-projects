@@ -7,4 +7,4 @@ import "./styles/module.scss";
 import "./styles/media.scss";
 import "./styles/state.scss";
 import "./styles/mixins_var.scss";
-import "#js/data.jsx"; // Alias
+import "./js/data.jsx"; // Alias

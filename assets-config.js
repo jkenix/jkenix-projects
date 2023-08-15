@@ -1,19 +1,17 @@
 export const assetDir = "assets";
 // Add ${assetDir}/path-to-directory and
 // the file path will be assets/path-to-dev-directory
-// If you want to remove settings for path assets/...
+// Or set settings for path assets/...
 // Delete first "/". Template: js[name.js]
 export const entryFileNames = `js/[name].js`;
 export const chunkFileNames = `js/[name]-[hash]-chunk.js`;
-
 const assets = [
-  // Same settings (See col 2 in code)
   {
-    output: `img/[name][extname]`,
+    output: `img/[hash][extname]`,
     regex: /\.(png|jpe?g|gif|svg|webp|avif)$/,
   },
-  { output: `css/[name][extname]`, regex: /\.css$/ },
-  { output: `js/[name]`, regex: /\.jsx?$/ },
+  { output: `[name][extname]`, regex: /\.css$/ },
+  { output: `js/[name][extname]`, regex: /\.jsx?$/ },
 ];
 
 export function processAssetFileNames(info) {
@@ -24,5 +22,6 @@ export function processAssetFileNames(info) {
       return result.output;
     }
   }
-  return `${assetDir}/[name]`;
+  // default since we don't have an entry
+  return `${assetDir}/[name][extname]`;
 }

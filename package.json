@@ -36,18 +36,20 @@
     "sockjs": "^0.3.24",
     "svgo": "^3.0.2",
     "terser": "^5.16.3",
-    "vite-plugin-html": "^3.2.0",
     "vite-plugin-html-resolve-alias": "^1.0.3",
+    "vite-plugin-insert-html": "^1.0.1",
     "yargs-parser": "^21.1.1"
   },
   "imports": {
     "#img": "./src/img/*",
+    "#css": "./src/styles/*",
     "#js": "./src/js/*",
     "#*": "./src/*"
   },
   "scripts": {
     "dev": "vite --config dev.config.js",
     "prod": "vite build --config prod.config.js",
+    "prev": "vite preview --open",
     "mk": "mkdir dist",
     "clean": "rd /s /q dist"
   }
