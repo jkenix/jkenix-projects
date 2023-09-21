@@ -60,10 +60,10 @@ export default function Contacts() {
                     <img src={vklogo} width="40" height="40" alt="Vk" />
                   </a>
                   <a href="#" title="Группа в Telegram">
-                    <img src={telegram} width="40" height="40" alt="Vk" />
+                    <img src={telegram} width="40" height="40" alt="Telegram" />
                   </a>
                   <a href="#" title="Связь в Whatsapp">
-                    <img src={wapp} width="40" height="40" alt="Vk" />
+                    <img src={wapp} width="40" height="40" alt="Whatsapp" />
                   </a>
                 </div>
               </div>

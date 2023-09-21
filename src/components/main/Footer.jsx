@@ -81,10 +81,10 @@ export default function Footer() {
               <img src={vklogo} width="25" height="25" alt="Vk" />
             </a>
             <a href="#" title="Группа в Telegram">
-              <img src={telegram} width="25" height="25" alt="Vk" />
+              <img src={telegram} width="25" height="25" alt="Telegram" />
             </a>
             <a href="#" title="Связь в Whatsapp">
-              <img src={wapp} width="25" height="25" alt="Vk" />
+              <img src={wapp} width="25" height="25" alt="Whatsapp" />
             </a>
           </div>
         </div>
