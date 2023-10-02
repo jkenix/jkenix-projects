@@ -2,8 +2,8 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import { fileURLToPath } from "url";
-import { insertHtml, h } from "vite-plugin-insert-html";
 // Plugins
+import handlebars from "vite-plugin-handlebars";
 import viteHtmlResolveAlias from "vite-plugin-html-resolve-alias";
 
 export default defineConfig({
@@ -28,15 +28,13 @@ export default defineConfig({
   },
   plugins: [
     viteHtmlResolveAlias(),
-    // insertHtml({
-    //   body: [
-    //     h("script", {
-    //       type: "module",
-    //       crossorigin: "",
-    //       src: "/src/index.js",
-    //     }),
-    //   ],
-    // }),
+    handlebars({
+      context: {
+        title: "Test Handlebars",
+      },
+      partialDirectory: resolve(__dirname, "partials"),
+      reloadOnPartialChange: true,
+    }),
   ],
   // build: {
   //   rollupOptions: {

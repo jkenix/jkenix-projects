@@ -1,6 +1,18 @@
 // Global selectors styles
+// @font-face {
+//   font-display: swap;
+//   text-rendering: optimizeLegibility;
+//   font-family: "JostRegular";
+//   src: url(/webfonts/JostRegular.woff) format("woff");
+// }
+#l-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 html {
   scroll-behavior: smooth;
+  padding: 0%;
 }
 
 h1,
@@ -25,7 +37,7 @@ textarea,
 [type="submit"],
 address,
 q {
-  font-family: "Montserrat", sans-serif;
+  font-family: "JostRegular", sans-serif;
   font-weight: 400;
   margin: 0;
 }

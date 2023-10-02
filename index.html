@@ -10,22 +10,19 @@
     <meta name="author" content="https://github.com/jkenix" />
     <link rel="shortcut icon" href="/img/feni_logo.webp" />
     <link rel="apple-touch-icon" href="/img/feni_apple_logo.webp" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      type="text/css" />
     <meta name="theme-color" content="#000" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="jkenix-projects.pages.dev" />
   </head>
   <body>
-    <div>Test Build Vite v. 1.0.0.</div>
-    <div id="l-wrapper"></div>
-    <script type="module" src="/src/index.js"></script>
+    <div id="l-wrapper">
+      {{>header}}
+      <main class="main">
+        <div>Test Build Vite v. 1.1.</div>
+        <h1>{{title}}</h1>
+      </main>
+      {{>footer}}
+    </div>
+    <script defer type="module" src="/src/index.js"></script>
   </body>
 </html>

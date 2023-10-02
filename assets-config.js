@@ -12,6 +12,11 @@ const assets = [
   },
   { output: `[name][extname]`, regex: /\.css$/ },
   { output: `js/[name][extname]`, regex: /\.jsx?$/ },
+  { output: `[name][extname]`, regex: /\.css$/ },
+  {
+    output: `webfonts/[name][extname]`,
+    regex: /\.(ttf|otf|fnt|woff)$/,
+  },
 ];
 
 export function processAssetFileNames(info) {
