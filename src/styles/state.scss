@@ -41,6 +41,9 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
+.preloader-load {
+  display: none;
+}
 // === Кнопки навигации (Общие классы) ===
 .nav-item,
 .btn-tab {

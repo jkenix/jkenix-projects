@@ -9,6 +9,7 @@ node_modules/
 *.zip
 Test/
 my-app/
+bootstrap*
 
 # dependencies
 /node_modules

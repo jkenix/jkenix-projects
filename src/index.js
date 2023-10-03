@@ -1,5 +1,4 @@
 // Импортирование компонентов и файлов стилей
-import "./styles/lib/normalize.css";
 import "./styles/base.scss";
 import "./styles/layout.scss";
 import "./styles/theme.scss";

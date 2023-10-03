@@ -1,3 +1,13 @@
+// Variables
+let body = document.querySelector("body");
+let preloader = document.querySelector(".preloader");
+// Preloader
+function preloaderRemove() {
+  preloader.remove("preloader");
+}
+window.addEventListener("load", (event) => {
+  preloaderRemove();
+});
 // Функция вызова всплывающего окна
 // после нажатия на "Заказать" в карточке услуги
 function Show_Order_Form() {
@@ -14,8 +24,3 @@ function Show_Order_Form() {
   fof.classList.toggle("of-is-visible");
   ham.classList.toggle("ham-is-hide");
 }
-
-function changeBackground(color) {
-  document.body.style.background = color;
-}
-changeBackground("#e5e3e3");
