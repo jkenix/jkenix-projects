@@ -3,8 +3,9 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import { fileURLToPath } from "url";
 // Plugins
-import handlebars from "vite-plugin-handlebars";
 import viteHtmlResolveAlias from "vite-plugin-html-resolve-alias";
+import handlebars from "vite-plugin-handlebars";
+import HandlebarsUpdate from "./handlebarsUpdate";
 
 export default defineConfig({
   root: "",
@@ -33,8 +34,8 @@ export default defineConfig({
         title: "Test Handlebars",
       },
       partialDirectory: resolve(__dirname, "partials"),
-      reloadOnPartialChange: true,
     }),
+    HandlebarsUpdate(),
   ],
   // build: {
   //   rollupOptions: {

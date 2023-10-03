@@ -7,4 +7,4 @@ import "./styles/module.scss";
 import "./styles/media.scss";
 import "./styles/state.scss";
 import "./styles/mixins_var.scss";
-import "./js/scripts.js"; // Alias
+import(/* webpackChunkName: "scripts" */ "./js/scripts.js"); // Alias

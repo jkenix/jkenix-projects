@@ -11,7 +11,7 @@ import browserslistToEsbuild from "browserslist-to-esbuild";
 import viteHtmlResolveAlias from "vite-plugin-html-resolve-alias";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
-import { chunkSplitPlugin } from "vite-plugin-chunk-split";
+import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
 import handlebars from "vite-plugin-handlebars";
 // Config
 export default defineConfig({
@@ -95,9 +95,8 @@ export default defineConfig({
         title: "Test Handlebars",
       },
       partialDirectory: resolve(__dirname, "partials"),
-      reloadOnPartialChange: true,
     }),
-    chunkSplitPlugin(),
+    manualChunksPlugin(),
   ],
   build: {
     target: browserslistToEsbuild(),
