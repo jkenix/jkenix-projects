@@ -11,7 +11,7 @@ import browserslistToEsbuild from "browserslist-to-esbuild";
 import viteHtmlResolveAlias from "vite-plugin-html-resolve-alias";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
-import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
+// import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
 import handlebars from "vite-plugin-handlebars";
 // Config
 export default defineConfig({
@@ -27,8 +27,8 @@ export default defineConfig({
     viteHtmlResolveAlias(),
     ViteMinifyPlugin({}),
     ViteImageOptimizer({
-      // test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
-      test: /\.(svg)$/i,
+      test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+      // test: /\.(svg)$/i,
       exclude: undefined,
       include: undefined,
       includePublic: true,
@@ -62,19 +62,19 @@ export default defineConfig({
       },
       png: {
         // https://sharp.pixelplumbing.com/api-output#png
-        quality: 100,
+        quality: 80,
       },
       jpeg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 100,
+        quality: 80,
       },
       jpg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 100,
+        quality: 80,
       },
       tiff: {
         // https://sharp.pixelplumbing.com/api-output#tiff
-        quality: 100,
+        quality: 80,
       },
       // gif does not support lossless compression
       // https://sharp.pixelplumbing.com/api-output#gif
@@ -92,11 +92,10 @@ export default defineConfig({
     }),
     handlebars({
       context: {
-        title: "Test Handlebars",
+        title: "Make your dream business goal come true",
       },
       partialDirectory: resolve(__dirname, "partials"),
     }),
-    manualChunksPlugin(),
   ],
   build: {
     target: browserslistToEsbuild(),

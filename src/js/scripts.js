@@ -1,26 +1,24 @@
 // Variables
 let body = document.querySelector("body");
-let preloader = document.querySelector(".preloader");
+let header = document.querySelector("l-header");
+let preloader = document.querySelector(".l-preloader");
 // Preloader
 function preloaderRemove() {
-  preloader.remove("preloader");
+  preloader.remove("l-preloader");
 }
 window.addEventListener("load", (event) => {
   preloaderRemove();
+  body.classList.remove("overflow-hidden");
 });
-// Функция вызова всплывающего окна
-// после нажатия на "Заказать" в карточке услуги
-function Show_Order_Form() {
-  // Выбор тега body (тела всего документа "index.html")
-  let body = document.querySelector("body");
-  // Выбор обертки карточки услуги, класса l-of-wrapper
-  let fof = document.querySelector(".l-of-wrapper");
-  // Выбор гамбургер-меню из Header.
-  // Его нужно скрывать, чтобы избежать
-  // случайного появления при перевороте экрана
-  let ham = document.querySelector(".hamburger");
-  // Добавление и удаление классов при нажатии кнопки
-  body.classList.toggle("overflow-is-hidden");
-  fof.classList.toggle("of-is-visible");
-  ham.classList.toggle("ham-is-hide");
-}
+// Show/Remove scroll
+window.addEventListener(
+  "scroll",
+  function (Scroll) {
+    if (window.scrollY > 100) {
+      header.classList.add("header-scroll");
+    } else if (window.scrollY < 100) {
+      header.classList.remove("header-scroll");
+    }
+  },
+  true
+);

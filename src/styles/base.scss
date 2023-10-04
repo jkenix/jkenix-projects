@@ -20,34 +20,6 @@
 @import "./lib/root";
 @import "./lib/reboot";
 @import "./lib/type";
-@import "./lib/images";
-@import "./lib/containers";
-@import "./lib/grid";
-@import "./lib/tables";
-@import "./lib/forms";
-@import "./lib/buttons";
-@import "./lib/transitions";
-@import "./lib/dropdown";
-@import "./lib/button-group";
-@import "./lib/nav";
-@import "./lib/navbar";
-@import "./lib/card";
-@import "./lib/accordion";
-@import "./lib/breadcrumb";
-@import "./lib/pagination";
-@import "./lib/badge";
-@import "./lib/alert";
-@import "./lib/progress";
-@import "./lib/list-group";
-@import "./lib/close";
-@import "./lib/toasts";
-@import "./lib/modal";
-@import "./lib/tooltip";
-@import "./lib/popover";
-@import "./lib/carousel";
-@import "./lib/spinners";
-@import "./lib/offcanvas";
-@import "./lib/placeholders";
 // Helpers
 @import "./lib/helpers";
 // Utilities
@@ -56,7 +28,9 @@ html {
   scroll-behavior: smooth;
   padding: 0%;
 }
-
+h1 {
+  @include font-size(4rem);
+}
 h1,
 h2,
 h3 {
@@ -64,7 +38,10 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-
+h2,
+h3 {
+  @include font-size(3.438rem);
+}
 div,
 p,
 a,

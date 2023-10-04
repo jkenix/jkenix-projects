@@ -31,7 +31,7 @@ export default defineConfig({
     viteHtmlResolveAlias(),
     handlebars({
       context: {
-        title: "Test Handlebars",
+        title: "Make your dream business goal come true",
       },
       partialDirectory: resolve(__dirname, "partials"),
     }),

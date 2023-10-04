@@ -2,13 +2,18 @@
 @import "mixins_var.scss";
 /* Классы тем */
 // Общие тэги
+div,
 span,
-a {
-  color: $b1;
+input,
+a,
+h1,
+h2,
+h3 {
+  color: $text_color;
 }
 // === Body ===
 body {
-  background-color: $we5;
+  background-color: $body_color;
 }
 // === Общие классы кнопок ===
 .btn-b41 {
@@ -20,7 +25,7 @@ body {
   }
 }
 .btn-bw41 {
-  color: $b1;
+  color: $text_color;
   background-color: $we5;
   border: 1px solid $b41;
   &:hover,
@@ -32,7 +37,7 @@ body {
 // === Home/Portfolio кнопки ===
 .btn-tab {
   background-color: $we5;
-  color: $b1;
+  color: $text_color;
   &:hover,
   &:focus-visible {
     color: $ff5;
@@ -69,15 +74,14 @@ body {
 .section-title,
 .section-desc,
 .small-section {
-  color: $b1;
+  color: $text_color;
 }
 // === Header ===
 .l-header {
-  background-color: $we5;
+  background-color: $body_color;
 }
-.disc-head > .feni-tel,
 .header-menu > a {
-  color: $b1;
+  color: $text_color;
   &:hover,
   &:focus-visible {
     color: $ff5;
@@ -91,47 +95,7 @@ body {
 }
 // === Main ===
 .l-main {
-  background-color: $we5;
-}
-// === Briefs ===
-.fb-info {
-  > .fb-title {
-    color: $b1;
-  }
-  // Focus fb-info
-  &:hover,
-  &:focus-visible {
-    > .fb-count,
-    > .fb-title,
-    > .fb-desc {
-      color: $ff5;
-    }
-    > .fb-desc::before {
-      background-color: $ff5;
-    }
-  }
-}
-// === Discuss ===
-.l-feni-discuss-project {
-  background-color: $b41;
-}
-.l-fdp-content-info {
-  > .fdp-title,
-  > .fdp-desc {
-    color: $we5;
-  }
-}
-.feni-checkbox-agree {
-  color: $we5;
-}
-.feedback-btn {
-  color: $we5;
-  background-color: $ff5;
-  &:hover,
-  &:focus-visible {
-    background-color: $we5;
-    color: $b41;
-  }
+  background-color: $body_color;
 }
 // Общие модули для формы
 .form-input {
@@ -146,17 +110,12 @@ body {
 }
 // === Work-desc === (Main, Portfolio)
 
-// === About ===
-.skill-num {
-  color: $ff5;
-}
-// === Contacts ===
-.contacts-link {
-  color: $b1;
-}
 // === Footer ===
-.l-footer {
-  background-color: $b1;
+.footer {
+  background-color: $footer_color;
+}
+.footer-logo {
+  background-color: $footer_logo;
 }
 .footer-links-title,
 .footer-link {

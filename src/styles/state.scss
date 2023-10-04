@@ -1,48 +1,44 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* Состояние модулей (Анимация и подсветка) */
-// === Body ===
-.overflow-is-hidden {
-  overflow: hidden;
-}
 // === Preloader ===
-.preloader-content {
-  display: block;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 30px auto;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #000;
-  animation: preloader-spin 2s linear infinite;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #17191b54;
-    animation: preloader-spin 3s linear infinite;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #091b2b80;
-    animation: preloader-spin 1.5s linear infinite;
-  }
-}
-.preloader-load {
-  display: none;
+// .preloader-content {
+//   display: block;
+//   position: relative;
+//   width: 150px;
+//   height: 150px;
+//   margin: 30px auto;
+//   border-radius: 50%;
+//   border: 3px solid transparent;
+//   border-top-color: #000;
+//   animation: preloader-spin 2s linear infinite;
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: 5px;
+//     left: 5px;
+//     right: 5px;
+//     bottom: 5px;
+//     border-radius: 50%;
+//     border: 3px solid transparent;
+//     border-top-color: #17191b54;
+//     animation: preloader-spin 3s linear infinite;
+//   }
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 15px;
+//     left: 15px;
+//     right: 15px;
+//     bottom: 15px;
+//     border-radius: 50%;
+//     border: 3px solid transparent;
+//     border-top-color: #091b2b80;
+//     animation: preloader-spin 1.5s linear infinite;
+//   }
+// }
+// Header
+.header-scroll {
+  opacity: 0.9;
 }
 // === Кнопки навигации (Общие классы) ===
 .nav-item,
@@ -117,46 +113,16 @@
   cursor: default;
 }
 // === Main ===
-// Fproject, Portfolio
-.btn-tab.active {
-  text-decoration: underline;
-}
-.work-img {
-  &:hover,
-  &:focus-visible {
-    opacity: 0.7;
-  }
-}
-// LazyLoad work-desc
-.wdl {
-  opacity: 0;
-}
-// Order Form
-.of-is-visible {
-  display: block;
-}
-.fof-close {
-  background-color: transparent;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  &:hover {
-    svg path {
-      stroke: $b1;
-    }
-  }
-}
 /* === Keyframes === */
 // Preloader
-@keyframes preloader-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes preloader-spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 // Active menu
 @keyframes fadeMe {
   0% {
@@ -256,17 +222,17 @@
   }
 }
 // === Lazyload ===
-.LazyLoad {
-  width: 100%;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  &.is-visible {
-    opacity: 1;
-    .work-desc {
-      opacity: 1;
-    }
-  }
-  &.rel {
-    position: relative;
-  }
-}
+// .LazyLoad {
+//   width: 100%;
+//   opacity: 0;
+//   transition: all 1s ease-in-out;
+//   &.is-visible {
+//     opacity: 1;
+//     .work-desc {
+//       opacity: 1;
+//     }
+//   }
+//   &.rel {
+//     position: relative;
+//   }
+// }

@@ -28,9 +28,9 @@
 }
 /* === Header ===*/
 .logo {
-  width: 65px;
-  height: 65px;
-  margin-right: 85px;
+  width: 136px;
+  height: 50px;
+  padding: 0;
 }
 .header-menu {
   display: flex;
@@ -70,7 +70,7 @@
   height: 5px;
   position: relative;
   border-radius: 2px;
-  background-color: $b1;
+  background-color: $text_color;
   transition: all 0.4s;
   &:nth-child(1) {
     top: 0px;
@@ -139,7 +139,7 @@
     padding-left: 100px;
     &::before {
       content: "";
-      background-color: $b1;
+      background-color: $text_color;
       position: absolute;
       left: 0;
       height: 1px;
@@ -228,56 +228,6 @@
 .pc-title {
   padding-right: 10px;
   font-weight: 700;
-}
-// --- Services Вложенные (!!!) ---
-// --- Slider ---
-.pd-num {
-  font-weight: 900;
-  font-size: 4.375rem;
-  -webkit-text-stroke: 0.007em $b41;
-  color: transparent;
-}
-.process-dev-content {
-  padding-bottom: 20px;
-}
-.pdc-up {
-  padding-top: 20px;
-  padding-bottom: 0;
-}
-// --- Slider title, Price, Beneftis title, pp-desc ---
-.pd-title,
-.prices-title,
-.price-project-title,
-.price,
-.pp-desc-strong,
-.benefits-title {
-  font-weight: 600;
-}
-// Order Form
-#Service-name {
-  border: none;
-  margin: 0;
-  pointer-events: none;
-  cursor: default;
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 255, 0);
-  margin-top: 10px;
-  font-size: 1rem;
-  overflow: hidden;
-  &:focus {
-    outline: none;
-  }
-}
-// Contacts
-.contacts-link {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 145%;
-  letter-spacing: 0.02em;
-  &:hover,
-  &:focus-visible {
-    color: $ff5;
-  }
 }
 // === Footer ===
 .footer-logo img {
