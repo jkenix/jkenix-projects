@@ -1,0 +1,142 @@
+/* === Классы макетов === */
+// .l-preloader {
+//   @include flexcolumn();
+//   align-items: center;
+//   font-family: "Montserrat", sans-serif;
+//   font-size: 1.5rem;
+//   font-weight: 900;
+//   justify-content: center;
+//   text-align: center;
+//   height: 100vh;
+//   overflow: hidden;
+//   &-dock {
+//     display: none;
+//   }
+// }
+// === Header ===
+.l-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.l-header-wr {
+  padding-top: 72px;
+  padding-bottom: 68px;
+}
+// === Main ===
+// Общие классы (Main)
+.l-feni-section,
+.btn-focus {
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-feni-start {
+  display: flex;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+.l-fs-content {
+  > .fs-desc {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+// Max-width
+.l-fm {
+  max-width: 1110px;
+}
+// Общие классы (Home) (fs, fi, fb, feni-services)
+.l-feni-start,
+.l-feni-info,
+.l-feni-briefs {
+  padding-left: 100px;
+}
+// === Все классы (Main) ===
+.main {
+  margin-top: 100px;
+}
+.l-agency-preview {
+  margin-bottom: 157px;
+}
+// === Footer ===
+.l-footer {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  @include flexcolumn();
+}
+.l-footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 100px;
+  row-gap: 20px;
+  max-width: 100%;
+  > .footer-logo {
+    height: 67px;
+    padding: 2px;
+  }
+  > .fc-first {
+    width: 25%;
+    padding: 0;
+  }
+  > .fc-links {
+    @include flexcolumn();
+    padding-left: 0;
+    padding-right: 31px;
+  }
+}
+.l-footer-bottom {
+  margin-top: 60px;
+  margin-right: 100px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  > .footer-copyright {
+    padding-right: 10px;
+  }
+  > .footer-link {
+    text-decoration: underline;
+    padding-right: 10px;
+    margin-bottom: 0;
+  }
+  > span,
+  > a {
+    font-size: 0.75rem;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+}
+// Политика Конфиденциальности
+// Публичная оферта
+.l-policy {
+  @include flexcolumn();
+}
+.l-privacy-policy,
+.l-public-offer {
+  padding-bottom: 100px;
+  > .section-title {
+    font-weight: 900;
+  }
+  > .section-desc {
+    margin-top: 25px;
+  }
+}
+// === Not found ===
+.l-not-found {
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-bottom: 50px;
+  row-gap: 50px;
+  > .fnf-content {
+    max-width: 276px;
+    > .fnf-title {
+      margin-bottom: 50px;
+    }
+  }
+  .btn-fnf {
+    margin-left: 0;
+  }
+}

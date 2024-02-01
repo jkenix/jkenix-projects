@@ -1,0 +1,114 @@
+// Global selectors styles
+@font-face {
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+    font-family: "QuicksandRegular";
+    src: url(/webfonts/QuicksandRegular.woff) format("woff");
+}
+@font-face {
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+    font-family: "NunitoRegular";
+    src: url(/webfonts/NunitoRegular.woff) format("woff");
+}
+
+body {
+    background: $body_color;
+}
+
+.container-fluid {
+    --bs-gutter-x: unset;
+    --bs-gutter-y: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0%;
+}
+h1 {
+    @include font-size(4rem);
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "NunitoRegular", sans-serif;
+    font-weight: 400;
+    color: $header_color;
+}
+h2,
+h3 {
+    @include font-size(3.438rem);
+}
+div,
+p,
+a,
+ul,
+li,
+span,
+button,
+label,
+input,
+input::placeholder,
+textarea,
+[type="submit"],
+address,
+q {
+    font-family: "QuicksandRegular", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+[type="submit"] {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #1d1d1d #0000 #377dff #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #377dff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+}
+.loader:after {
+    border-color: #1d1d1d #0000 #0000 #0000;
+    transform: translate(32px, 3px) rotate(-35deg);
+}

@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>Agency Creative</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <meta name="google" content="nositelinkssearchbox" />
-    <meta name="yandex" content="nofollow" />
-    <meta name="author" content="https://github.com/jkenix" />
-    <link rel="shortcut icon" href="/img/feni_logo.webp" />
-    <link rel="apple-touch-icon" href="/img/feni_apple_logo.webp" />
-    <meta name="theme-color" content="#111" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="jkenix-projects.pages.dev" />
-    <script type="module" crossorigin src="/src/index.js"></script>
-  </head>
-  <body class="overflow-hidden">
-    <div
-      class="l-preloader text-center vh-100 justify-content-center align-items-center d-flex">
-      <div
-        class="spinner-border"
-        style="width: 5rem; height: 5rem"
-        role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-    {{>header}}
-    <main class="l-main">
-      <div class="l-agency-preview">
-        <h1 class="d-flex text-center justify-content-center container-fluid">{{title}}</h1>
+    <head>
+        <title>Agency Creative</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta name="yandex" content="nofollow" />
+        <meta name="author" content="https://github.com/jkenix" />
+        <link rel="shortcut icon" href="/img/jklogo.webp" />
+        <link rel="apple-touch-icon" href="/img/jklogo_apple.webp" />
+        <meta name="theme-color" content="#111" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="jkenix-projects.pages.dev" />
+        <script type="module" crossorigin src="/src/index.js"></script>
+    </head>
+    <body class="overflow-hidden">
+        <div
+            class="l-preloader text-center vh-100 justify-content-center align-items-center d-flex flex-column">
+            <span class="loader"></span>
+            <span class="fs-1 p-3">Loading...</span>
+        </div>
+        {{>header}}
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1
+                            class="d-flex text-center justify-content-center">
+                            {{title}}
+                        </h1>
+                    </div>
+                </div>
+                <h3
+                    style="background-color: white; color: darkturquoise"
+                    class="d-flex text-center justify-content-center">
+                    WORK IN PROGRESS!
+                </h3>
+            </div>
 
-      </div>
-      <h3 style="background-color:white; color:darkturquoise;" class="d-flex text-center justify-content-center">WORK IN PROGRESS!</p>
-      <!-- <h2>H2 Test</h2> -->
-    </main>
-    {{>footer}}
-  </body>
+            <!-- <h2>H2 Test</h2> -->
+        </main>
+        {{>footer}}
+    </body>
 </html>

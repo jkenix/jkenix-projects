@@ -1,0 +1,95 @@
+// === Section title, desc ===
+// H1
+.section-main-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+}
+// H2
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+}
+// H, P
+.small-section {
+  font-size: 1rem;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+}
+.section-desc {
+  font-size: 1rem;
+  line-height: 185%;
+  letter-spacing: 0.02em;
+}
+/* === Header ===*/
+.logo {
+  width: 136px;
+  height: 50px;
+  padding: 0;
+}
+.header-menu {
+  display: flex;
+  width: 50%;
+  > .nav-item {
+    margin-right: 45px;
+    &:nth-last-child(1) {
+      margin: 0;
+    }
+    &:hover,
+    &:focus-visible {
+      color: $ff5;
+    }
+  }
+}
+.hamburger {
+  cursor: pointer;
+  display: none;
+  width: 34px;
+  height: 34px;
+}
+.hamburger > span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  border-radius: 2px;
+  background-color: $text_color;
+  transition: all 0.4s;
+  &:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    animation: span1_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  &:nth-child(2) {
+    top: 8px;
+    right: 0px;
+    animation: span2_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  &:nth-child(3) {
+    animation: span3_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    top: 17px;
+    right: 0px;
+  }
+}
+
+// === Изображения ===
+.img__resp-block {
+  display: flex;
+  transition: all ease 0.5s;
+  img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+.img__rubber {
+  display: flex;
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
