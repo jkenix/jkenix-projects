@@ -3,3 +3,76 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes opacity-is-shown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// @keyframes span1 {
+//     0% {
+//         transform: translate(0, 0);
+//     }
+
+//     100% {
+//         transform: rotate(45deg);
+//         transform-origin: 5%;
+//     }
+// }
+// @keyframes span2 {
+//     0% {
+//         transform: translate(0, 0) scale(1);
+//     }
+
+//     100% {
+//         transform: translateX(-40px);
+//         background-color: transparent;
+//     }
+// }
+
+// @keyframes span3 {
+//     0% {
+//         transform: translate(0, 0);
+//     }
+//     100% {
+//         transform: rotate(-45deg);
+//         transform-origin: 5%;
+//         top: 10px;
+//         left: 0px;
+//     }
+// }
+
+// @keyframes span1_close {
+//     0% {
+//         transform: rotate(45deg);
+//         transform-origin: 5%;
+//     }
+//     100% {
+//         transform: rotate(0deg) translate(0, 0);
+//     }
+// }
+// @keyframes span2_close {
+//     0% {
+//         transform: translateX(-40px);
+//         background-color: transparent;
+//     }
+//     100% {
+//         transform: translate(0, 0) scale(1);
+//     }
+// }
+// @keyframes span3_close {
+//     0% {
+//         transform: rotate(-45deg);
+//         transform-origin: 5%;
+//         top: 10px;
+//         left: 0px;
+//     }
+//     100% {
+//         transform: rotate(0deg) translate(0, 0);
+//     }
+// }

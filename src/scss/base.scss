@@ -12,6 +12,11 @@
     src: url(/webfonts/NunitoRegular.woff) format("woff");
 }
 
+// For check outlines
+// * {
+//     outline: 1px solid red;
+// }
+
 body {
     background: $body_color;
 }
@@ -19,6 +24,10 @@ body {
 .container-fluid {
     --bs-gutter-x: unset;
     --bs-gutter-y: unset;
+}
+
+.container {
+    box-sizing: border-box;
 }
 
 html {
@@ -61,6 +70,7 @@ q {
 
 a {
     text-decoration: none;
+    color: $text_color;
 }
 
 button {
@@ -84,6 +94,18 @@ ul {
 address {
     font-style: normal;
     font-size: 1.5rem;
+}
+
+// Global elements
+.logo {
+    width: 136px;
+    height: 50px;
+    padding: 0;
+    margin-right: 68px;
+
+    @media (min-width: $sm) {
+        margin-right: auto;
+    }
 }
 
 .loader {

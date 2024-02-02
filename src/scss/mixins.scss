@@ -1,0 +1,5 @@
+/* Миксины */
+@mixin flexcolumn() {
+    display: flex;
+    flex-direction: column;
+}

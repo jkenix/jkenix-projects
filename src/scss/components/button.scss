@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 24px;
+    padding: 12px 50px;
+    height: 48px;
+
+    &__transparent {
+        border: 1px solid #e2e2e2;
+        color: $text_color;
+        background-color: transparent;
+
+        &:hover,
+        &:focus-visible {
+           background-color: $text_color;
+           color: $body_color;
+        }
+
+        &:active {
+            background-color: $active1-color;
+        }
+    }
+}

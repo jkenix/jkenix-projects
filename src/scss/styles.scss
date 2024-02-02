@@ -1,6 +1,13 @@
 @import "./lib/rfs";
-@import "mixins_var.scss";
+@import "mixins";
+@import "variables";
 @import "keyframes";
 
+// Global
 @import "base";
-@import "layout";
+@import "helpers";
+
+// Components
+@import "./components/header";
+@import "./components/hamburger";
+@import "./components/button";
