@@ -2,13 +2,13 @@
 @font-face {
     font-display: swap;
     text-rendering: optimizeLegibility;
-    font-family: "QuicksandRegular";
+    font-family: $main-font1;
     src: url(/webfonts/QuicksandRegular.woff) format("woff");
 }
 @font-face {
     font-display: swap;
     text-rendering: optimizeLegibility;
-    font-family: "NunitoRegular";
+    font-family: $main-font2;
     src: url(/webfonts/NunitoRegular.woff) format("woff");
 }
 
@@ -101,11 +101,7 @@ address {
     width: 136px;
     height: 50px;
     padding: 0;
-    margin-right: 68px;
-
-    @media (min-width: $sm) {
-        margin-right: auto;
-    }
+    margin-right: auto;
 }
 
 .loader {
