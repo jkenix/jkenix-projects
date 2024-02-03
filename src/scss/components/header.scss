@@ -15,19 +15,25 @@
         padding-top: 72px;
         padding-bottom: 68px;
 
-        &.active {
-            @media (max-width: $lg) {
-                padding: 0;
-
-                > .logo {
-                    display: none;
-                }
-            }
-        }
-
         @media (max-width: $lg) {
             > .btn {
                 display: none;
+            }
+        }
+
+        > .btn {
+            width: 181px;
+            font-weight: 700;
+        }
+
+        &.active {
+            @media (max-width: $lg) {
+                align-items: flex-start;
+                height: 100vh;
+
+                > .logo {
+                    pointer-events: none;
+                }
             }
         }
     }
@@ -36,6 +42,10 @@
         display: flex;
         margin-right: auto;
         // width: 50%;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
 
         > .nav-item {
             margin-right: 50px;
@@ -48,16 +58,15 @@
             }
         }
 
-        @media (max-width: $lg) {
-            display: none;
-        }
-
         &.active {
             @media (max-width: $lg) {
-                display: flex;
+                @include flexcolumn();
+
+                position: absolute;
+                left: 0;
+                padding-top: 100px;
                 animation: opacity-is-shown 1s forwards;
                 height: 100vh;
-                padding-top: 140px;
                 flex-direction: column;
                 margin: 0;
                 gap: 30px;

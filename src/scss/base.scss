@@ -66,6 +66,7 @@ q {
     font-family: "QuicksandRegular", sans-serif;
     font-weight: 400;
     margin: 0;
+    color: $text_color;
 }
 
 a {
@@ -102,31 +103,6 @@ address {
     height: 50px;
     padding: 0;
     margin-right: auto;
+    z-index: 10;
 }
 
-.loader {
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    position: relative;
-    border: 3px solid;
-    border-color: #1d1d1d #0000 #377dff #0000;
-    border-radius: 50%;
-    box-sizing: border-box;
-    animation: 1s rotate linear infinite;
-}
-
-.loader:before,
-.loader:after {
-    content: "";
-    top: 0;
-    left: 0;
-    position: absolute;
-    border: 10px solid transparent;
-    border-bottom-color: #377dff;
-    transform: translate(-10px, 19px) rotate(-35deg);
-}
-.loader:after {
-    border-color: #1d1d1d #0000 #0000 #0000;
-    transform: translate(32px, 3px) rotate(-35deg);
-}
