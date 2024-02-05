@@ -6,7 +6,7 @@
     }
 
     &__scroll {
-        opacity: 0.9;
+        background-color: $body_color2;
     }
 
     &__wrap {
@@ -47,8 +47,13 @@
             display: none;
         }
 
+        > #home {
+            font-weight: 700;
+        }
+
         > .nav-item {
             margin-right: 50px;
+
             &:nth-last-child(1) {
                 margin: 0;
             }

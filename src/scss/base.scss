@@ -18,7 +18,114 @@
 // }
 
 body {
-    background: $body_color;
+    background: $body_color2;
+    color: $text_color2;
+
+    a,
+    button {
+        color: $text_color2;
+    }
+
+    button {
+        border-color: $border-color1;
+    }
+
+    .hamburger span {
+        background-color: $text_color2;
+    }
+
+    .header__scroll .hamburger span {
+        background-color: $text_color2;
+    }
+
+    .btn__transparent {
+        &:hover,
+        &:focus-visible {
+            background-color: $border-color1;
+            color: $text_color1;
+        }
+    }
+
+    &.dark-theme {
+        background: $body_color1;
+        color: $text_color1;
+
+        a {
+            color: $text_color1;
+        }
+
+        .hamburger span {
+            background-color: $text_color1;
+        }
+
+        .header__scroll {
+            a,
+            button {
+                color: $text_color2;
+                border-color: $text_color2;
+            }
+
+            .hamburger span {
+                background-color: $text_color2;
+            }
+
+            button:hover {
+                background-color: $text_color2;
+                color: $text_color1;
+            }
+        }
+
+        .btn__transparent {
+            color: $text_color1;
+            border-color: $text_color1;
+
+            &:hover,
+            &:focus-visible {
+                background-color: $text_color1;
+                color: $text_color2;
+            }
+        }
+    }
+}
+
+.theme-switcher {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+    input {
+        width: 90px;
+        height: 40px;
+        background: #111;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    input:checked {
+        background: #fff;
+    }
+
+    input::after {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffbe76;
+        transform: translate(5px, 5px);
+        transition: 0.3s linear;
+    }
+
+    input:checked::after {
+        inset: unset;
+        background: transparent;
+        box-shadow: 10px 10px 0 #353b48;
+        transform: translate(calc(90px - 45px), -5px);
+    }
 }
 
 .container-fluid {
@@ -43,7 +150,6 @@ h3 {
     margin: 0;
     font-family: "NunitoRegular", sans-serif;
     font-weight: 400;
-    color: $header_color;
 }
 h2,
 h3 {
@@ -64,14 +170,11 @@ textarea,
 address,
 q {
     font-family: "QuicksandRegular", sans-serif;
-    font-weight: 400;
     margin: 0;
-    color: $text_color;
 }
 
 a {
     text-decoration: none;
-    color: $text_color;
 }
 
 button {
@@ -99,10 +202,26 @@ address {
 
 // Global elements
 .logo {
-    width: 136px;
+    display: flex;
+    width: 153px;
     height: 50px;
     padding: 0;
     margin-right: auto;
     z-index: 10;
-}
 
+    &__text {
+        @include flexcolumn();
+        padding-left: 15px;
+
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+
+        > .creative {
+            font-weight: 400;
+            font-size: 1rem;
+            letter-spacing: 0.01em;
+        }
+    }
+}

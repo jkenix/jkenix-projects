@@ -1,7 +1,11 @@
-// Overflow
-.overflow-is-hidden {
+._overflow-is-hidden {
     overflow: hidden;
 }
+
+._scroll {
+    opacity: 0.9;
+}
+
 // === Section title, desc ===
 // H1
 .section-main-title {
