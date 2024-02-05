@@ -26,8 +26,12 @@ body {
         color: $text_color2;
     }
 
+    p {
+        color: $text_color3;
+    }
+
     button {
-        border-color: $border-color1;
+        border-color: $body_color3;
     }
 
     .hamburger span {
@@ -38,19 +42,16 @@ body {
         background-color: $text_color2;
     }
 
-    .btn__transparent {
-        &:hover,
-        &:focus-visible {
-            background-color: $border-color1;
-            color: $text_color1;
-        }
+    .btn__main {
+        color: $text_color1;
     }
 
     &.dark-theme {
         background: $body_color1;
         color: $text_color1;
 
-        a {
+        a,
+        p {
             color: $text_color1;
         }
 
@@ -73,6 +74,11 @@ body {
                 background-color: $text_color2;
                 color: $text_color1;
             }
+
+            .theme-switcher input:checked {
+                background-color: $text_color1;
+                border: 1px solid $text_color2;
+            }
         }
 
         .btn__transparent {
@@ -83,6 +89,19 @@ body {
             &:focus-visible {
                 background-color: $text_color1;
                 color: $text_color2;
+            }
+        }
+
+        .btn__main {
+            color: $text_color2;
+            border-color: $text_color1;
+            background-color: $body_color4;
+            box-shadow: 0 4px 8px 0 $body_color1;
+
+            &:hover,
+            &:focus-visible {
+                background-color: $text_color2;
+                color: $text_color1;
             }
         }
     }
@@ -143,13 +162,15 @@ html {
 }
 h1 {
     @include font-size(4rem);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
 h1,
 h2,
 h3 {
     margin: 0;
     font-family: "NunitoRegular", sans-serif;
-    font-weight: 400;
 }
 h2,
 h3 {
@@ -210,7 +231,7 @@ address {
     z-index: 10;
 
     &__text {
-        @include flexcolumn();
+        @include column();
         padding-left: 15px;
 
         font-weight: 700;

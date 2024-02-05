@@ -23,7 +23,6 @@
 
         > .btn {
             width: 181px;
-            font-weight: 700;
         }
 
         &.active {
@@ -65,7 +64,7 @@
 
         &.active {
             @media (max-width: $lg) {
-                @include flexcolumn();
+                @include column();
 
                 position: absolute;
                 left: 0;

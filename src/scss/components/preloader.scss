@@ -2,7 +2,7 @@
     text-align: center;
     height: 100vh;
 
-    @include flexcolumn();
+    @include column();
     justify-content: center;
     align-items: center;
 

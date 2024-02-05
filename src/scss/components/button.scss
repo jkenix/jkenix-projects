@@ -6,18 +6,33 @@
     line-height: 150%;
     letter-spacing: 0.01em;
 
+    &:active {
+        background-color: $active1-color !important;
+    }
+
     &__transparent {
         border-width: 1px;
         border-style: solid;
         background-color: transparent;
+        font-weight: 700;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $body_color3;
+            color: $text_color1;
+        }
+    }
+
+    &__main {
+        border-width: 1px;
+        border-style: solid;
+        background-color: $body_color3;
+        font-weight: 700;
 
         &:hover,
         &:focus-visible {
             background-color: $text_color1;
-        }
-
-        &:active {
-            background-color: $active1-color !important;
+            color: $text_color2;
         }
     }
 }
