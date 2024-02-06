@@ -1,6 +1,8 @@
 // Preloader
-const body = document.querySelector("body");
-const header = document.querySelector(".header__wrap");
+const ham = document.querySelector(".hamburger");
+const body = document.querySelector("html");
+const header = document.querySelector(".header__fluid");
+const headermenu = document.querySelector(".header__menu");
 const btnDarkMode = document.querySelector("#switch-theme");
 
 function preloaderRemove() {
@@ -15,12 +17,10 @@ window.addEventListener("load", (event) => {
 window.addEventListener(
     "scroll",
     function (Scroll) {
-        let header__fluid = document.querySelector(".header__fluid");
-
-        if (window.scrollY > 100) {
-            header__fluid.classList.add("header__scroll");
-        } else if (window.scrollY < 100) {
-            header__fluid.classList.remove("header__scroll");
+        if (window.scrollY > 20) {
+            header.classList.add("-scroll");
+        } else if (window.scrollY < 20) {
+            header.classList.remove("-scroll");
         }
     },
     true
@@ -28,34 +28,29 @@ window.addEventListener(
 //
 btnDarkMode.addEventListener("click", (e) => {
     if (btnDarkMode.checked) {
-		body.classList.add("dark-theme");
-	} else {
-		body.classList.remove("dark-theme");
-	}
+        body.classList.add("dark-theme");
+    } else {
+        body.classList.remove("dark-theme");
+    }
 });
 
 // Функция для добавления и удаления классов
 function toggleClasses() {
-    let ham = document.querySelector(".hamburger");
-    let headermenu = document.querySelector(".header__menu");
     ham.classList.toggle("active");
     body.classList.toggle("_overflow-is-hidden");
     header.classList.toggle("active");
     headermenu.classList.toggle("active");
+    btnDarkMode.classList.toggle("active");
 }
 
 // Функция для обработки нажатия на гамбургер
-document
-    .querySelector(".hamburger")
-    .addEventListener("click", function (event) {
-        toggleClasses();
-    });
+ham.addEventListener("click", function (event) {
+    toggleClasses();
+});
 
 // Функция для обработки нажатия на элемент меню header
-document
-    .querySelector(".header__menu")
-    .addEventListener("click", function (event) {
-        if (event.target.tagName === "A") {
-            toggleClasses();
-        }
-    });
+headermenu.addEventListener("click", function (event) {
+    if (event.target.tagName === "A") {
+        toggleClasses();
+    }
+});

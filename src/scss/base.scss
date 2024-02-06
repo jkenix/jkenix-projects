@@ -17,12 +17,13 @@
 //     outline: 1px solid red;
 // }
 
+// Global elements
 body {
     background: $body_color2;
     color: $text_color2;
 
     a,
-    button {
+    button, span, q {
         color: $text_color2;
     }
 
@@ -50,16 +51,19 @@ body {
         background: $body_color1;
         color: $text_color1;
 
-        a,
-        p {
+        a, p, q, span {
             color: $text_color1;
+        }
+
+        ._bg-theme {
+            background-color: $body_color1;
         }
 
         .hamburger span {
             background-color: $text_color1;
         }
 
-        .header__scroll {
+        .header__fluid.-scroll {
             a,
             button {
                 color: $text_color2;
@@ -107,46 +111,6 @@ body {
     }
 }
 
-.theme-switcher {
-    display: flex;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-
-    input {
-        width: 90px;
-        height: 40px;
-        background: #111;
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    input:checked {
-        background: #fff;
-    }
-
-    input::after {
-        content: "";
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        background: #ffbe76;
-        transform: translate(5px, 5px);
-        transition: 0.3s linear;
-    }
-
-    input:checked::after {
-        inset: unset;
-        background: transparent;
-        box-shadow: 10px 10px 0 #353b48;
-        transform: translate(calc(90px - 45px), -5px);
-    }
-}
-
 .container-fluid {
     --bs-gutter-x: unset;
     --bs-gutter-y: unset;
@@ -156,9 +120,35 @@ body {
     box-sizing: border-box;
 }
 
+.logo {
+    display: flex;
+    width: 153px;
+    height: 50px;
+    padding: 0;
+    margin-right: auto;
+    z-index: 10;
+
+    &__text {
+        @include column();
+        padding-left: 15px;
+
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+
+        > .creative {
+            font-weight: 400;
+            font-size: 1rem;
+            letter-spacing: 0.01em;
+        }
+    }
+}
+
 html {
     scroll-behavior: smooth;
     padding: 0%;
+    overflow-x: hidden;
 }
 h1 {
     @include font-size(4rem);
@@ -219,30 +209,4 @@ ul {
 address {
     font-style: normal;
     font-size: 1.5rem;
-}
-
-// Global elements
-.logo {
-    display: flex;
-    width: 153px;
-    height: 50px;
-    padding: 0;
-    margin-right: auto;
-    z-index: 10;
-
-    &__text {
-        @include column();
-        padding-left: 15px;
-
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 120%;
-        letter-spacing: 0.01em;
-
-        > .creative {
-            font-weight: 400;
-            font-size: 1rem;
-            letter-spacing: 0.01em;
-        }
-    }
 }

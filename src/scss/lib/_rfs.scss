@@ -17,7 +17,7 @@ $rfs-unit: rem !default;
 }
 
 // Breakpoint at where values start decreasing if screen width is smaller
-$rfs-breakpoint: 1200px !default;
+$rfs-breakpoint: 991.98px !default;
 $rfs-breakpoint-unit: px !default;
 
 @if $rfs-breakpoint-unit != px and $rfs-breakpoint-unit != em and $rfs-breakpoint-unit != rem {

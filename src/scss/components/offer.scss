@@ -1,13 +1,23 @@
 .offer {
-    &__content {
+    &-content {
         @include column();
         align-items: center;
         margin-bottom: 100px;
 
+        @media (max-width: $lg) {
+            margin-bottom: 50px;
+        }
+
+        &-wrap {
+            display: flex;
+            padding: 0;
+            justify-content: space-evenly;
+        }
+
         > .title {
             max-width: 749px;
             margin-bottom: 25px;
-            
+
             padding-right: 15px;
             padding-left: 15px;
         }
@@ -26,6 +36,138 @@
         > .btn__main {
             margin-top: 30px;
             width: 201px;
+        }
+    }
+
+    &-img {
+        display: flex;
+        position: relative;
+        max-width: 985px;
+
+        &-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 210px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    &-img__great-project {
+        position: absolute;
+        width: 125px;
+        height: 95px;
+        padding: 20px 30px 0;
+
+        transform: translate(-45%, 20%);
+        box-shadow: $box-shadow3;
+
+        @media (max-width: $lg) {
+            width: 99px;
+            height: 53px;
+            transform: translate(-10%, -30%);
+            padding: 20px 30px;
+        }
+
+        @media (max-width: $sm) {
+            transform: translate(0%, -40%);
+        }
+
+        > .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 10px;
+            }
+
+            > span {
+                font-size: 0.70rem;
+            }
+
+            > svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        > .content {
+            font-family: $main-font2;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0.01em;
+
+            @media (max-width: $lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &-img__review {
+        @include column();
+
+        position: absolute;
+        width: 166px;
+        height: 166px;
+        padding: 20px 20px 0;
+        right: -110px;
+        bottom: -50px;
+        box-shadow: $box-shadow3;
+
+        @media (max-width: $lg) {
+            right: -20px;
+        }
+
+        @media (max-width: $sm) {
+            right: 0px;
+            bottom: -80px;
+        }
+
+        > .title {
+            display: flex;
+            gap: 10px;
+
+            > .info-block {
+                @include column();
+                gap: 5px;
+            }
+
+            .name {
+                font-weight: 600;
+                letter-spacing: 0.01em;
+            }
+
+            .job {
+                font-size: 0.65rem;
+                font-weight: 600;
+                letter-spacing: 0.01em;
+            }
+        }
+
+        > .content {
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.01em;
+            margin-top: 10px;
+
+            > q {
+                &::before {
+                    content: "“ ";
+                }
+
+                &::after {
+                    content: " “";
+                }
+            }
         }
     }
 }

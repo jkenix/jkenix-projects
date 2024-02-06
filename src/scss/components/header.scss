@@ -3,10 +3,29 @@
         position: sticky;
         top: 0;
         z-index: 10;
-    }
 
-    &__scroll {
-        background-color: $body_color2;
+        &.active {
+            @media (max-width: $lg) {
+                height: 100vh;
+
+                > .logo {
+                    pointer-events: none;
+                }
+            }
+        }
+
+        &.-scroll {
+            background-color: $body_color2;
+
+            .theme-switcher {
+                display: none;
+            }
+
+            .header__wrap {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
     }
 
     &__wrap {
@@ -16,6 +35,8 @@
         padding-bottom: 68px;
 
         @media (max-width: $lg) {
+            padding-top: 40px;
+
             > .btn {
                 display: none;
             }
@@ -24,29 +45,17 @@
         > .btn {
             width: 181px;
         }
-
-        &.active {
-            @media (max-width: $lg) {
-                align-items: flex-start;
-                height: 100vh;
-
-                > .logo {
-                    pointer-events: none;
-                }
-            }
-        }
     }
 
     &__menu {
         display: flex;
         margin-right: auto;
-        // width: 50%;
 
         @media (max-width: $lg) {
             display: none;
         }
 
-        > #home {
+        > #home-link {
             font-weight: 700;
         }
 
@@ -67,6 +76,7 @@
                 @include column();
 
                 position: absolute;
+                top: 100px;
                 left: 0;
                 padding-top: 100px;
                 animation: opacity-is-shown 1s forwards;

@@ -1,0 +1,48 @@
+.theme-switcher {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+    @media (max-width: $lg) {
+        bottom: 15px;
+        top: auto;
+    }
+
+    #switch-theme.active {
+        display: none;
+    }
+
+    input {
+        width: 90px;
+        height: 40px;
+        background: #111;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:checked {
+            background: #fff;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: #ffbe76;
+            transform: translate(5px, 5px);
+            transition: 0.3s linear;
+        }
+
+        &:checked::after {
+            inset: unset;
+            background: transparent;
+            box-shadow: 10px 10px 0 #353b48;
+            transform: translate(calc(90px - 45px), -5px);
+        }
+    }
+}
