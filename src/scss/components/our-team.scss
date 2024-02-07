@@ -1,0 +1,13 @@
+.our-team {
+    &-wrap {
+        margin-bottom: 150px;
+    }
+
+    &__title {
+        text-align: center;
+
+        > ._block-title {
+            margin-top: 20px;
+        }
+    }
+}

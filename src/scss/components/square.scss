@@ -1,0 +1,37 @@
+.square {
+    position: absolute;
+    width: 98px;
+    height: 70px;
+
+    &.-blue1 {
+        top: -20px;
+        left: 174px;
+
+        @media (max-width: $lg) {
+            top: auto;
+            bottom: -10px;
+            right: auto;
+            left: -10px;
+        }
+    }
+
+    &.-red {
+        bottom: -20px;
+        left: 174px;
+
+        @media (max-width: $lg) {
+            top: -10px;
+            right: -10px;
+            left: auto;
+        }
+    }
+
+    &.-green {
+        bottom: -10px;
+        left: 214px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+}

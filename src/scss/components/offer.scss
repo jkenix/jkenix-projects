@@ -53,6 +53,10 @@
                 margin-bottom: 100px;
             }
         }
+
+        &__main {
+            z-index: 20;
+        }
     }
 
     &-img__great-project {
@@ -60,9 +64,9 @@
         width: 125px;
         height: 95px;
         padding: 20px 30px 0;
+        z-index: 30;
 
         transform: translate(-45%, 20%);
-        box-shadow: $box-shadow3;
 
         @media (max-width: $lg) {
             width: 99px;
@@ -91,7 +95,7 @@
             }
 
             > span {
-                font-size: 0.70rem;
+                font-size: 0.7rem;
             }
 
             > svg {
@@ -116,12 +120,12 @@
         @include column();
 
         position: absolute;
+        z-index: 30;
         width: 166px;
         height: 166px;
         padding: 20px 20px 0;
         right: -110px;
         bottom: -50px;
-        box-shadow: $box-shadow3;
 
         @media (max-width: $lg) {
             right: -20px;

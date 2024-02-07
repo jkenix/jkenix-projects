@@ -3,7 +3,7 @@
         position: relative;
         transition: all 1s ease;
         top: 0;
-        z-index: 10;
+        z-index: 100;
 
         &.active {
             @media (max-width: $lg) {
@@ -39,9 +39,6 @@
 
                     &.active {
                         background-color: transparent !important;
-
-                        @media (orientation: landscape) {
-                        }
                     }
                 }
 
@@ -111,16 +108,19 @@
                 text-align: center;
 
                 @media (orientation: landscape) {
-                    align-items: center;
-                    justify-content: center;
                     flex-wrap: wrap;
                     flex-direction: row;
                     height: auto;
                     width: auto;
+                    left: auto;
 
-                    padding-top: 50px;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    padding-top: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    > .nav-item {
+                        font-size: 1.5rem !important;
+                    }
                 }
 
                 > .nav-item {

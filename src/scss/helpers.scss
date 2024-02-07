@@ -1,3 +1,4 @@
+// Global
 ._overflow-is-hidden {
     overflow: hidden;
 }
@@ -6,24 +7,53 @@
     opacity: 0.9;
 }
 
+// Box-shadows
 ._btn-bs {
     box-shadow: $box-shadow1;
 }
 
-._elipse-bs {
+._bs-2 {
     box-shadow: $box-shadow2;
 }
 
+._elipse-bs {
+    box-shadow: $box-shadow3;
+}
+
+// Themes
 ._bg-theme {
     background-color: $body_color2;
     border-radius: 16px;
 }
 
+// Position
+._m-0-auto {
+    margin: 0 auto;
+}
+
+// Visibility
 ._op-05 {
     opacity: 0.5;
 }
 
-// === Section title, desc ===
+// === Text ===
+._small-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+}
+
+._block-title {
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: 0em;
+}
+
+// Text Themes
+._st-color {
+    color: $text_color4;
+}
 
 // === Изображения ===
 ._img__resp-block {
@@ -35,10 +65,6 @@
         max-width: 100%;
         object-fit: cover;
     }
-}
-
-._m-0-auto {
-    margin: 0 auto;
 }
 
 .img__rubber {
