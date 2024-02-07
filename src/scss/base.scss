@@ -47,6 +47,12 @@ body {
 
         &.active {
             background-color: $body_color2;
+
+            
+            .hamburger > span {
+                background-color: $body_color1 !important;
+            }
+
         }
 
         .hamburger {
@@ -82,6 +88,18 @@ body {
         }
 
         .header__fluid.-scroll {
+            &.active {
+                background-color: $body_color1;
+
+                a {
+                    color: $text_color1;
+                }
+
+                .hamburger > span {
+                    background-color: $body_color2 !important;
+                }
+            }
+
             a,
             span,
             button {
@@ -94,10 +112,6 @@ body {
 
             #switch-theme {
                 border: 1px solid $body_color1;
-            }
-
-            &.active {
-                background-color: $body_color1;
             }
 
             .hamburger {

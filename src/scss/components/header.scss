@@ -36,6 +36,7 @@
                     padding: 20px;
 
                     &.active {
+                        background-color: transparent !important;
                         right: 20px;
                     }
                 }
