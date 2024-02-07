@@ -1,6 +1,5 @@
 // Preloader
 const ham = document.querySelector(".hamburger");
-const html = document.querySelector("html");
 const body = document.querySelector("body");
 const header = document.querySelector(".header__fluid");
 const headermenu = document.querySelector(".header__menu");
@@ -38,7 +37,7 @@ btnDarkMode.addEventListener("click", (e) => {
 // Функция для добавления и удаления классов
 function toggleClasses() {
     ham.classList.toggle("active");
-    html.classList.toggle("_overflow-is-hidden");
+    body.classList.toggle("_overflow-is-hidden");
     header.classList.toggle("active");
     headermenu.classList.toggle("active");
     btnDarkMode.classList.toggle("active");
