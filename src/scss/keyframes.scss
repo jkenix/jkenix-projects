@@ -1,16 +1,12 @@
-@keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 @keyframes opacity-is-shown {
     0% {
         opacity: 0;
+        top: 0;
     }
 
     100% {
         opacity: 1;
+        top: 100px;
     }
 }
 

@@ -3,6 +3,7 @@
     position: absolute;
     right: 20px;
     top: 15px;
+    transition: all 1s ease;
 
     @media (max-width: $lg) {
         bottom: 15px;

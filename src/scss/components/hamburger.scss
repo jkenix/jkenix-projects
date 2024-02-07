@@ -65,11 +65,13 @@
                 &:nth-of-type(2) {
                     transform: translateX(-40px);
                     background-color: transparent;
+                    visibility: hidden;
                 }
 
                 &:nth-of-type(3) {
                     transform: translateX(-40px);
                     background-color: transparent;
+                    visibility: hidden;
                 }
 
                 &:nth-of-type(4) {
