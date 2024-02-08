@@ -30,10 +30,35 @@ body {
 
     p {
         color: $text_color3;
+
+        @media (max-width: $lg) {
+            font-size: 1rem !important;
+        }
     }
 
     button {
         border-color: $body_color3;
+    }
+
+    .btn__main {
+        color: $text_color1;
+    }
+
+    .btn__transparent {
+        &:hover,
+        &:focus-visible {
+            svg path {
+                fill: $text_color1;
+            }
+
+            span {
+                color: $text_color1;
+            }
+        }
+
+        span {
+            color: $text_color4;
+        }
     }
 
     .hamburger > span {
@@ -62,10 +87,6 @@ body {
         }
     }
 
-    .btn__main {
-        color: $text_color1;
-    }
-
     &.dark-theme {
         background: $body_color1;
         color: $text_color1;
@@ -79,6 +100,44 @@ body {
 
         ._bg-theme {
             background-color: $body_color1;
+        }
+
+        .btn__main {
+            color: $text_color2;
+            background-color: $body_color4;
+
+            &:hover,
+            &:focus-visible {
+                background-color: $text_color2;
+                color: $text_color1;
+            }
+        }
+
+        .btn__transparent {
+            color: $text_color1;
+            border-color: $text_color1;
+
+            &:hover,
+            &:focus-visible {
+                background-color: $body_color2;
+                color: $text_color2;
+
+                svg path {
+                    fill: $body_color2;
+                }
+
+                span {
+                    color: $text_color2;
+                }
+            }
+
+            svg {
+                fill: $text_color1;
+
+                path {
+                    fill: $body_color1;
+                }
+            }
         }
 
         .hamburger span {
@@ -118,28 +177,6 @@ body {
                 > span {
                     background-color: $body_color1;
                 }
-            }
-        }
-
-        .btn__transparent {
-            color: $text_color1;
-            border-color: $text_color1;
-
-            &:hover,
-            &:focus-visible {
-                background-color: $text_color1;
-                color: $text_color2;
-            }
-        }
-
-        .btn__main {
-            color: $text_color2;
-            background-color: $body_color4;
-
-            &:hover,
-            &:focus-visible {
-                background-color: $text_color2;
-                color: $text_color1;
             }
         }
     }
@@ -199,7 +236,6 @@ h2 {
 }
 
 h3 {
-
 }
 
 h1,

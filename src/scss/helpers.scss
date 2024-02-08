@@ -46,7 +46,7 @@
 
 ._block-title {
     font-weight: 700;
-    font-size: 55px;
+    @include font-size(3.438rem);
     letter-spacing: 0em;
 }
 

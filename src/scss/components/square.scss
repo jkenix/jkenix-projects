@@ -3,7 +3,7 @@
     width: 98px;
     height: 70px;
 
-    &.-blue1 {
+    &.-ofimg_blue {
         top: -20px;
         left: 174px;
 
@@ -15,7 +15,7 @@
         }
     }
 
-    &.-red {
+    &.-ofimg_red {
         bottom: -20px;
         left: 174px;
 
@@ -26,12 +26,35 @@
         }
     }
 
-    &.-green {
+    &.-ofimg_green {
         bottom: -10px;
         left: 214px;
 
         @media (max-width: $lg) {
             display: none;
+        }
+    }
+
+    // Our team
+    &.-ourteam_red {
+        top: -20px;
+        left: -30px;
+
+        @media (max-width: $lg) {
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: -10px;
+        }
+    }
+
+    &.-ourteam_purple {
+        bottom: -20px;
+        right: -30px;
+
+        @media (max-width: $lg) {
+            top: -10px;
+            left: 0;
         }
     }
 }
