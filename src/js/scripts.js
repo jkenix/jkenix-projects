@@ -13,6 +13,7 @@ window.addEventListener("load", (event) => {
     preloaderRemove();
     body.classList.remove("_overflow-is-hidden");
 });
+
 // Show/Remove scroll
 window.addEventListener(
     "scroll",
@@ -25,7 +26,8 @@ window.addEventListener(
     },
     true
 );
-//
+
+// Change theme
 btnDarkMode.addEventListener("click", (e) => {
     if (btnDarkMode.checked) {
         body.classList.add("dark-theme");
@@ -34,7 +36,7 @@ btnDarkMode.addEventListener("click", (e) => {
     }
 });
 
-// Функция для добавления и удаления классов
+// Func for add and delete classes
 function toggleClasses() {
     ham.classList.toggle("active");
     body.classList.toggle("_overflow-is-hidden");
@@ -43,12 +45,12 @@ function toggleClasses() {
     btnDarkMode.classList.toggle("active");
 }
 
-// Функция для обработки нажатия на гамбургер
+// Function to handle hamburger click
 ham.addEventListener("click", function (event) {
     toggleClasses();
 });
 
-// Функция для обработки нажатия на элемент меню header
+// Function to handle header menu item click
 headermenu.addEventListener("click", function (event) {
     if (event.target.tagName === "A") {
         toggleClasses();

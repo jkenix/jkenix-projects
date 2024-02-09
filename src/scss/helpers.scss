@@ -55,13 +55,12 @@
     color: $text_color4;
 }
 
-// === Изображения ===
+// === Images ===
 ._img__resp-block {
     display: flex;
     transition: all ease 0.5s;
     > img {
         height: 100%;
-        width: 100%;
         max-width: 100%;
         object-fit: cover;
     }
