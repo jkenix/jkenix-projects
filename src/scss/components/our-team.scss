@@ -39,6 +39,10 @@
             z-index: 20;
             border-radius: 24px;
             width: 100%;
+
+            @media (max-width: $lg) {
+                border-radius: 12px;
+            }
         }
     }
 
