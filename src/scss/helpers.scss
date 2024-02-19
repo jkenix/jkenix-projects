@@ -20,6 +20,16 @@
     box-shadow: $box-shadow3;
 }
 
+// Border
+._border-rad-100 {
+    display: flex;
+    @include f-center();
+
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
 // Themes
 ._bg-theme {
     background-color: $body_color2;
@@ -41,6 +51,12 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 100%;
+    letter-spacing: 0.01em;
+}
+
+._main-desc {
+    font-weight: 400;
+    font-size: 1.25rem;
     letter-spacing: 0.01em;
 }
 

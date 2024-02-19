@@ -23,14 +23,16 @@
         }
 
         > .desc {
-            font-weight: 400;
-            font-size: 1.25rem;
             line-height: 150%;
-            letter-spacing: 0.01em;
-            text-align: center;
+            max-width: 750px;
 
             padding-right: 15px;
             padding-left: 15px;
+            text-align: start;
+
+            @media (min-width: $sm) {
+                text-align: center;
+            }
         }
 
         > .btn__main {

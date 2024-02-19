@@ -1,0 +1,21 @@
+.our-portfolio {
+    &-wrap {
+    }
+
+    &__title {
+        @include column();
+        @include f-center();
+        margin-bottom: 50px;
+
+        > .title {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        > .desc {
+            max-width: 600px;
+            line-height: 170%;
+            text-align: center;
+        }
+    }
+}
