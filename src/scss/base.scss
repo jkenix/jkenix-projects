@@ -22,18 +22,8 @@ body {
     background: $body_color2;
     color: $text_color2;
 
-    a,
-    span,
-    q {
-        color: $text_color2;
-    }
-
     p {
         color: $text_color3;
-
-        @media (max-width: $lg) {
-            font-size: 1rem !important;
-        }
     }
 
     button {
@@ -91,11 +81,20 @@ body {
         background: $body_color1;
         color: $text_color1;
 
-        a,
-        p,
-        q,
-        span {
+        p {
             color: $text_color1;
+        }
+
+        ._st-color-2 {
+            color: $text_color1;
+        }
+        
+        .our-services-images__content {
+            border-color: $body_color2;
+        }
+
+        .about-us__content {
+            box-shadow: 0 8px 24px 0 rgb(255 255 255 / 15%);
         }
 
         ._bg-theme {
@@ -200,6 +199,12 @@ body {
     margin-right: auto;
     z-index: 10;
 
+    &.-footer {
+        padding: 20px 25px;
+        background-color: $body_color2;
+        border-radius: 20px;
+    }
+
     &__text {
         @include column();
         padding-left: 15px;
@@ -208,6 +213,10 @@ body {
         font-size: 1.25rem;
         line-height: 120%;
         letter-spacing: 0.01em;
+
+        &.-footer {
+            color: $text_color2;
+        }
 
         > .creative {
             font-weight: 400;
@@ -243,6 +252,12 @@ h2,
 h3 {
     margin: 0;
     font-family: "NunitoRegular", sans-serif;
+}
+
+p {
+    @media (max-width: $lg) {
+        font-size: 1rem !important;
+    }
 }
 
 div,

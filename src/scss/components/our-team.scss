@@ -1,18 +1,13 @@
 .our-team {
     &-wrap {
         margin-bottom: 150px;
-    }
-
-    &-content {
-        display: flex;
 
         @media (max-width: $lg) {
-            flex-direction: column;
+            margin-bottom: 100px;
         }
     }
 
     &__title {
-        text-align: center;
         margin-bottom: 40px;
 
         > .title {

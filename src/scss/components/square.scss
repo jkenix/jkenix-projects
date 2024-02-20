@@ -57,4 +57,36 @@
             left: 0;
         }
     }
+
+    // Our portfolio
+    &.-ourportfolio_purple {
+        right: 0;
+        transform: rotate(160deg);
+        bottom: -50px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+
+    &.-ourportfolio_purple-2 {
+        transform: rotate(20deg);
+        left: -10px;
+        top: 100px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+
+    // About us
+    &.-aboutus_blue {
+        transform: rotate(20deg);
+        top: -50px;
+        left: 150px;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
 }

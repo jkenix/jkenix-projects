@@ -1,17 +1,26 @@
 .offer {
+    &-wrap {
+        margin-bottom: 210px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 150px;
+        }
+    }
+
     &-content {
         @include column();
         align-items: center;
-        margin-bottom: 100px;
-
-        @media (max-width: $lg) {
-            margin-bottom: 50px;
-        }
 
         &-wrap {
             display: flex;
             padding: 0;
             justify-content: space-evenly;
+            margin-bottom: 100px;
+
+            @media (max-width: $lg) {
+                margin-top: 70px;
+                margin-bottom: 70px;
+            }
         }
 
         > .title {
@@ -49,11 +58,6 @@
         &-wrap {
             display: flex;
             justify-content: center;
-            margin-bottom: 210px;
-
-            @media (max-width: $lg) {
-                margin-bottom: 100px;
-            }
         }
 
         &__main {

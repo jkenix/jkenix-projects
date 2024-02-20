@@ -66,8 +66,20 @@
     letter-spacing: 0em;
 }
 
+._t-center {
+    text-align: center;
+}
+
 // Text Themes
-._st-color {
+._st-color-1 {
+    color: $text_color1;
+}
+
+._st-color-2 {
+    color: $text_color2;
+}
+
+._st-color-4 {
     color: $text_color4;
 }
 

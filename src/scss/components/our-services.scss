@@ -1,13 +1,9 @@
 .our-services {
     &-wrap {
         margin-bottom: 115px;
-    }
-
-    &-content {
-        display: flex;
 
         @media (max-width: $lg) {
-            flex-direction: column;
+            margin-bottom: 75px;
         }
     }
 
@@ -26,23 +22,19 @@
         > .desc {
             line-height: 160%;
             margin-bottom: 35px;
-
-            @media (max-width: $lg) {
-                text-align: center;
-            }
         }
 
         > .read-more {
             display: flex;
             justify-content: flex-end;
 
+            @media (max-width: $lg) {
+                justify-content: flex-start;
+            }
+
             .read-more__content {
                 display: flex;
                 gap: 15px;
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
     }
