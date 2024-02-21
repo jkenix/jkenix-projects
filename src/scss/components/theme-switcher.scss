@@ -10,6 +10,10 @@
         top: auto;
     }
 
+    > label {
+        visibility: hidden;
+    }
+
     #switch-theme.active {
         display: none;
     }
