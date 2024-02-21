@@ -12,7 +12,7 @@
         display: inline-block;
         position: relative;
         border: 3px solid;
-        border-color: #fff #0000 #377dff #0000;
+        border-color: #000 #fff #377dff #fff;
         border-radius: 50%;
         box-sizing: border-box;
         animation: 1s rotate linear infinite;
@@ -29,7 +29,7 @@
         }
 
         &:after {
-            border-color: #fff #0000 #0000 #0000;
+            border-color: #000 #0000 #0000 #0000;
             transform: translate(32px, 3px) rotate(-35deg);
         }
     }

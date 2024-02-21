@@ -1,6 +1,6 @@
-.about-us {
+.reviews {
     &-wrap {
-        margin-bottom: 250px;
+        margin-bottom: 280px;
 
         @media (max-width: $lg) {
             margin-bottom: 100px;
@@ -24,10 +24,15 @@
 
         &-wrap {
             .col-md-6 {
-
                 @media (max-width: $lg) {
                     margin-bottom: 25px;
                 }
+            }
+        }
+
+        &-rad {
+            @media (min-width: $xxl) {
+                padding: 30px;
             }
         }
 
