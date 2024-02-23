@@ -88,7 +88,7 @@ body {
         ._st-color-2 {
             color: $text_color1;
         }
-        
+
         .our-services-images__content {
             border-color: $body_color2;
         }
@@ -255,6 +255,9 @@ h3 {
 }
 
 p {
+    min-width: 198px;
+    max-width: 750px;
+
     @media (max-width: $lg) {
         font-size: 1rem !important;
     }

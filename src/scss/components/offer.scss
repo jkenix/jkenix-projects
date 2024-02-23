@@ -10,6 +10,8 @@
     &-content {
         @include column();
         align-items: center;
+        height: auto;
+        max-height: 400px;
 
         &-wrap {
             display: flex;
@@ -18,13 +20,15 @@
             margin-bottom: 100px;
 
             @media (max-width: $lg) {
-                margin-top: 70px;
-                margin-bottom: 70px;
+                // margin-top: 70px;
+                // margin-bottom: 70px;
             }
         }
 
         > .title {
             max-width: 749px;
+            min-height: 179px;
+
             margin-bottom: 25px;
 
             padding-right: 15px;
@@ -33,10 +37,7 @@
 
         > .desc {
             line-height: 150%;
-            max-width: 750px;
 
-            padding-right: 15px;
-            padding-left: 15px;
             text-align: start;
 
             @media (min-width: $sm) {
@@ -53,7 +54,8 @@
     &-img {
         display: flex;
         position: relative;
-        max-width: 985px;
+        max-width: 100%;
+        min-width: 279px;
 
         &-wrap {
             display: flex;

@@ -18,22 +18,17 @@
     &-img {
         position: relative;
 
-        @media (max-width: $lg) {
-            width: 100%;
-        }
-
         &-wrap {
             @media (max-width: $lg) {
-                display: flex;
-                order: 2;
-                margin-top: 70px;
+                display: none;
+                // order: 2;
+                // margin-top: 70px;
             }
         }
 
         &__main {
             z-index: 20;
             border-radius: 24px;
-            width: 100%;
 
             @media (max-width: $lg) {
                 border-radius: 12px;

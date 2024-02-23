@@ -52,7 +52,10 @@ ham.addEventListener("click", function (event) {
 
 // Function to handle header menu item click
 headermenu.addEventListener("click", function (event) {
-    if (headermenu.classList.contains("active") && event.target.tagName === "A") {
+    if (
+        headermenu.classList.contains("active") &&
+        event.target.tagName === "A"
+    ) {
         toggleClasses();
     }
 });
