@@ -3,7 +3,7 @@
         margin-bottom: 210px;
 
         @media (max-width: $lg) {
-            margin-bottom: 100px;
+            margin-bottom: 0;
         }
     }
 
@@ -18,16 +18,18 @@
             margin-bottom: 100px;
             min-height: 400px;
             max-width: 100%;
+
+            @media (max-width: $lg) {
+                margin-bottom: 60px;
+            }
         }
 
         > .title {
             max-width: 749px;
             min-height: 179px;
+            min-width: 179px;
 
             margin-bottom: 25px;
-
-            padding-right: 15px;
-            padding-left: 15px;
         }
 
         > .desc {

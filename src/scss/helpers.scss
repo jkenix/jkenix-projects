@@ -78,9 +78,16 @@
     text-align: center;
 }
 
+._underline {
+    &:hover,
+    &:focus-visible {
+        text-decoration: underline;
+    }
+}
+
 // Text Themes
 ._st-color-1 {
-    color: $text_color1;
+    color: $text_color5;
 }
 
 ._st-color-2 {

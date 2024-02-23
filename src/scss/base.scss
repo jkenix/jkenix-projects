@@ -31,7 +31,7 @@ body {
     }
 
     .btn__main {
-        color: $text_color1;
+        color: $text_color5;
     }
 
     .btn__transparent {
@@ -216,8 +216,12 @@ body {
 
     &.-footer {
         padding: 20px 25px;
-        background-color: $body_color2;
+        background-color: $body_color4;
         border-radius: 20px;
+
+        @media (max-width: $xl) and (min-width: $lg) {
+            padding: 20px 10px;
+        }
     }
 
     &__text {
