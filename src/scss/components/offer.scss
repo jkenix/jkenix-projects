@@ -18,6 +18,7 @@
             padding: 0;
             justify-content: space-evenly;
             margin-bottom: 100px;
+            min-height: 400px;
 
             @media (max-width: $lg) {
                 // margin-top: 70px;
@@ -54,8 +55,9 @@
     &-img {
         display: flex;
         position: relative;
-        max-width: 100%;
+        max-width: 752px;
         min-width: 279px;
+        min-height: 186px;
 
         &-wrap {
             display: flex;

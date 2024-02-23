@@ -18,36 +18,36 @@
             }
         }
 
-        &.-scroll {
-            @media (max-width: $lg) {
-                position: sticky;
-                top: 0;
+        // &.-scroll {
+        //     @media (max-width: $lg) {
+        //         position: sticky;
+        //         top: 0;
 
-                .logo {
-                    opacity: 0;
-                    visibility: hidden;
-                }
+        //         .logo {
+        //             opacity: 0;
+        //             visibility: hidden;
+        //         }
 
-                .theme-switcher {
-                    opacity: 0;
-                    visibility: hidden;
-                }
+        //         .theme-switcher {
+        //             opacity: 0;
+        //             visibility: hidden;
+        //         }
 
-                .hamburger {
-                    transition: all 1s ease;
-                    position: absolute;
-                    top: 50px;
-                    right: 0;
-                    bottom: auto;
-                    padding: 20px;
+        //         .hamburger {
+        //             transition: all 1s ease;
+        //             position: absolute;
+        //             top: 50px;
+        //             right: 0;
+        //             bottom: auto;
+        //             padding: 20px;
 
-                    &.active {
-                        background-color: transparent !important;
-                        top: 100px;
-                    }
-                }
-            }
-        }
+        //             &.active {
+        //                 background-color: transparent !important;
+        //                 top: 100px;
+        //             }
+        //         }
+        //     }
+        // }
     }
 
     &__wrap {

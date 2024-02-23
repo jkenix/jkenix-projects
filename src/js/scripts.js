@@ -15,17 +15,17 @@ window.addEventListener("load", (event) => {
 });
 
 // Show/Remove scroll
-window.addEventListener(
-    "scroll",
-    function (Scroll) {
-        if (window.scrollY > 100) {
-            header.classList.add("-scroll");
-        } else if (window.scrollY < 100) {
-            header.classList.remove("-scroll");
-        }
-    },
-    true
-);
+// window.addEventListener(
+//     "scroll",
+//     function (Scroll) {
+//         if (window.scrollY > 100) {
+//             header.classList.add("-scroll");
+//         } else if (window.scrollY < 100) {
+//             header.classList.remove("-scroll");
+//         }
+//     },
+//     true
+// );
 
 // Change theme
 btnDarkMode.addEventListener("click", (e) => {
