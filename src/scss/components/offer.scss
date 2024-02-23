@@ -3,15 +3,13 @@
         margin-bottom: 210px;
 
         @media (max-width: $lg) {
-            margin-bottom: 150px;
+            margin-bottom: 100px;
         }
     }
 
     &-content {
         @include column();
         align-items: center;
-        height: auto;
-        max-height: 400px;
 
         &-wrap {
             display: flex;
@@ -19,11 +17,7 @@
             justify-content: space-evenly;
             margin-bottom: 100px;
             min-height: 400px;
-
-            @media (max-width: $lg) {
-                // margin-top: 70px;
-                // margin-bottom: 70px;
-            }
+            max-width: 100%;
         }
 
         > .title {
@@ -59,6 +53,10 @@
         &-wrap {
             display: flex;
             justify-content: center;
+
+            @media (max-width: $lg) {
+                display: none;
+            }
         }
 
         &__main {
