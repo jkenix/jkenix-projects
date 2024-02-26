@@ -102,20 +102,13 @@
 ._img__resp-block {
     display: flex;
     transition: all ease 0.5s;
+
     > img {
         height: auto;
         width: 100%;
         max-width: 100%;
-        min-width: 279px;
-        min-height: 186px;
+        // min-width: 279px;
+        // min-height: 186px;
         object-fit: cover;
-    }
-}
-
-.img__rubber {
-    display: flex;
-    img {
-        height: auto;
-        max-width: 100%;
     }
 }

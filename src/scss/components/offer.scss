@@ -16,12 +16,6 @@
             padding: 0;
             justify-content: space-evenly;
             margin-bottom: 100px;
-            min-height: 400px;
-            max-width: 100%;
-
-            @media (max-width: $lg) {
-                margin-bottom: 60px;
-            }
         }
 
         > .title {
@@ -57,16 +51,7 @@
             justify-content: center;
 
             @media (max-width: $lg) {
-                display: none;
-            }
-        }
-
-        &__main {
-            z-index: 20;
-            border-radius: 50px;
-
-            @media (max-width: $lg) {
-                border-radius: 12px;
+                margin-bottom: 120px;
             }
         }
     }
@@ -121,6 +106,16 @@
             @media (max-width: $lg) {
                 font-size: 1rem;
             }
+        }
+    }
+
+    &-img__general__content {
+        z-index: 20;
+        border-radius: 50px;
+        min-width: 279px;
+
+        @media (max-width: $lg) {
+            border-radius: 12px;
         }
     }
 

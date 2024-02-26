@@ -189,20 +189,20 @@ body {
 .container {
     box-sizing: border-box;
 
-    @media (max-width: $xxl) and (min-width: $xl) {
-        max-width: 1185px;
-    }
+    // @media (max-width: $xxl) and (min-width: $xl) {
+    //     max-width: 1185px;
+    // }
 
-    @media (max-width: $xl) and (min-width: $lg) {
-        max-width: 980px;
-    }
+    // @media (max-width: $xl) and (min-width: $lg) {
+    //     max-width: 980px;
+    // }
 
-    @media (max-width: $lg) and (min-width: $md) {
-        max-width: 735px;
-    }
-    @media (max-width: $md) and (min-width: $sm) {
-        max-width: 540px;
-    }
+    // @media (max-width: $lg) and (min-width: $md) {
+    //     max-width: 735px;
+    // }
+    // @media (max-width: $md) and (min-width: $sm) {
+    //     max-width: 540px;
+    // }
 }
 
 .logo {
@@ -263,9 +263,6 @@ h2 {
     letter-spacing: 0em;
 }
 
-h3 {
-}
-
 h1,
 h2,
 h3 {
@@ -274,7 +271,6 @@ h3 {
 }
 
 p {
-    min-width: 198px;
     max-width: 750px;
 
     @media (max-width: $lg) {
