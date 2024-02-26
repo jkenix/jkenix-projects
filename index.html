@@ -14,18 +14,16 @@
         <meta property="og:site_name" content="jkenix-projects.pages.dev" />
         <script type="module" crossorigin src="/src/index.js"></script>
     </head>
-    <body class="_overflow-is-hidden">
-        <div class="preloader">
-            <span class="loader"></span>
-            <span class="loader-text">Loading...</span>
-        </div>
+    <body>
+       <main class="main">
         {{>header}}
-            {{>offer}} 
-            {{>our-team}}
-            {{>our-services}}
-            {{>our-portfolio}}
-            {{>reviews}}
-            {{>collab}}
+        {{>offer}} 
+        {{>our-team}}
+        {{>our-services}}
+        {{>our-portfolio}}
+        {{>reviews}}
+        {{>collab}}
         {{>footer}}
+       </main>
     </body>
 </html>

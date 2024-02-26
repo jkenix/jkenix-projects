@@ -5,15 +5,6 @@ const header = document.querySelector(".header__fluid");
 const headermenu = document.querySelector(".header__menu");
 const btnDarkMode = document.querySelector("#switch-theme");
 
-function preloaderRemove() {
-    let preloader = document.querySelector(".preloader");
-    preloader.remove("preloader");
-}
-window.addEventListener("load", (event) => {
-    preloaderRemove();
-    body.classList.remove("_overflow-is-hidden");
-});
-
 // Show/Remove scroll
 window.addEventListener(
     "scroll",
