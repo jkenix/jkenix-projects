@@ -1,6 +1,6 @@
 # Actual Jkenix's projects catalog of web development. ⚡   
 
-- [Latest finished project](https://github.com/jkenix/jkenix-project/tree/feni-website) ✅
+[Latest finished project](https://github.com/jkenix/jkenix-project/tree/feni-website) ✅
 
 ## **Others projects**: ⬇️
 
