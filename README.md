@@ -1,6 +1,6 @@
-# Actual Jkenix's projects catalog of web development. ⚡   
+# **Creative Agency** 🌐
 
-- [Latest finished project](https://github.com/jkenix/jkenix-project/tree/feni-website) ✅
-- [Old repo with projects](https://github.com/jkenix/jkenix.github.io) 🔗
+Adaptive Landing Page. ✅
 
-**Main** is a branch of the current development. 👨🏻‍💻 
+- [Demonstration of work](https://creative-agency-hev.pages.dev/) 🔗  
+- [Layout](https://www.figma.com/file/sHSCJ8g4y3hic480GSRqLF/Landing-Page-(Creative-Agency)-(Community)?type=design&node-id=1-68&mode=design&t=6Yl8MudhMHxNSsnN-0) ✏️   
