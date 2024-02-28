@@ -3,7 +3,6 @@ const ham = document.querySelector(".hamburger");
 const body = document.querySelector("body");
 const header = document.querySelector(".header__fluid");
 const headermenu = document.querySelector(".header__menu");
-const btnDarkMode = document.querySelector("#switch-theme");
 
 // Show/Remove scroll
 window.addEventListener(
@@ -18,22 +17,12 @@ window.addEventListener(
     true
 );
 
-// Change theme
-btnDarkMode.addEventListener("click", (e) => {
-    if (btnDarkMode.checked) {
-        body.classList.add("dark-theme");
-    } else {
-        body.classList.remove("dark-theme");
-    }
-});
-
 // Func for add and delete classes
 function toggleClasses() {
     ham.classList.toggle("active");
     body.classList.toggle("_overflow-is-hidden");
     header.classList.toggle("active");
     headermenu.classList.toggle("active");
-    btnDarkMode.classList.toggle("active");
 }
 
 // Function to handle hamburger click

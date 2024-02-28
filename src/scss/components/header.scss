@@ -9,6 +9,7 @@
 
         &.active {
             @media (max-width: $lg) {
+                background-color: $body_color1;
                 overflow-y: scroll;
                 height: 100vh;
                 max-height: 100%;
@@ -20,13 +21,17 @@
         }
 
         &.-scroll {
+            @media (min-width: $lg) {
+                background-color: $body_color1;
+            }
+
             @media (max-width: $lg) {
                 .logo {
                     opacity: 0;
                     visibility: hidden;
                 }
 
-                .theme-switcher {
+                .cart {
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -36,15 +41,19 @@
                 }
 
                 .hamburger {
+                    background-color: $body_color2;
                     transition: all 1s ease;
-                    position: absolute;
-                    top: 50px;
-                    right: 0;
-                    bottom: auto;
-                    padding: 20px;
+                    // position: absolute;
+                    // top: 50px;
+                    // right: 0;
+                    // bottom: auto;
+                    padding: 10px;
+
+                    > span {
+                        background-color: $body_color1;
+                    }
 
                     &.active {
-                        background-color: transparent !important;
                     }
                 }
             }
@@ -79,12 +88,16 @@
             display: none;
         }
 
-        > #home-link {
-            font-weight: 700;
-        }
+        // > #home-link {
+        //     font-weight: 700;
+        // }
 
         > .nav-item {
             margin-right: 50px;
+
+            @media (max-width: $xl) {
+                margin-right: 30px;
+            }
 
             &:nth-last-child(1) {
                 margin: 0;

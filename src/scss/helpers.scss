@@ -20,30 +20,6 @@
     box-shadow: $box-shadow3;
 }
 
-// Border
-._border-rad-100 {
-    display: flex;
-    @include f-center();
-
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-}
-
-._border-link {
-    &:hover,
-    &:focus-visible {
-        border: 1px solid $body_color1;
-        opacity: 0.7;
-    }
-}
-
-// Themes
-._bg-theme {
-    background-color: $body_color2;
-    border-radius: 16px;
-}
-
 // Position
 ._m-0-auto {
     margin: 0 auto;
@@ -86,17 +62,17 @@
 }
 
 // Text Themes
-._st-color-1 {
-    color: $text_color5;
-}
+// ._st-color-1 {
+//     color: $text_color5;
+// }
 
 ._st-color-2 {
     color: $text_color2;
 }
 
-._st-color-4 {
-    color: $text_color4;
-}
+// ._st-color-4 {
+//     color: $text_color4;
+// }
 
 // === Images ===
 ._img__resp-block {
@@ -107,8 +83,6 @@
         height: auto;
         width: 100%;
         max-width: 100%;
-        // min-width: 279px;
-        // min-height: 186px;
         object-fit: cover;
     }
 }

@@ -14,10 +14,13 @@
     }
 
     &__transparent {
-        border-width: 1px;
-        border-style: solid;
+        border: 1px solid rgba(8, 8, 41, 0.2);
+        border-radius: 14px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        
         background-color: transparent;
-        font-weight: 700;
+        color: $text_color2;
 
         &:hover,
         &:focus-visible {
@@ -27,14 +30,17 @@
     }
 
     &__main {
-        border-width: 1px;
-        border-style: solid;
+        border: 1px solid rgba(8, 8, 41, 0.2);
+        border-radius: 14px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+
         background-color: $body_color3;
-        font-weight: 700;
+        color: $text_color1;
 
         &:hover,
         &:focus-visible {
-            background-color: $text_color1;
+            background-color: $body_color1;
             color: $text_color2;
         }
     }

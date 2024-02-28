@@ -3,13 +3,7 @@
     font-display: swap;
     text-rendering: optimizeLegibility;
     font-family: $main-font1;
-    src: url(/webfonts/QuicksandRegular.woff) format("woff");
-}
-@font-face {
-    font-display: swap;
-    text-rendering: optimizeLegibility;
-    font-family: $main-font2;
-    src: url(/webfonts/NunitoRegular.woff) format("woff");
+    src: url(/webfonts/PlusJakartaSansRegular.woff) format("woff");
 }
 
 // For check outlines
@@ -18,169 +12,6 @@
 // }
 
 // Global elements
-body {
-    background: $body_color2;
-    color: $text_color2;
-
-    p {
-        color: $text_color3;
-    }
-
-    button {
-        border-color: $body_color3;
-    }
-
-    .btn__main {
-        color: $text_color5;
-    }
-
-    .btn__transparent {
-        &:hover,
-        &:focus-visible {
-            svg path {
-                fill: $text_color1;
-            }
-
-            span {
-                color: $text_color1;
-            }
-        }
-
-        span {
-            color: $text_color4;
-        }
-    }
-
-    .hamburger > span {
-        background-color: $body_color1;
-    }
-
-    .header__fluid.-scroll {
-        @media (min-width: $lg) {
-            background-color: $body_color2;
-        }
-
-        &.active {
-            background-color: $body_color2;
-
-            .hamburger > span {
-                background-color: $body_color1 !important;
-            }
-        }
-
-        .hamburger {
-            background-color: $body_color1;
-
-            > span {
-                background-color: $body_color2;
-            }
-        }
-    }
-
-    &.dark-theme {
-        background: $body_color1;
-        color: $text_color1;
-
-        p {
-            color: $text_color1;
-        }
-
-        ._st-color-2 {
-            color: $text_color1;
-        }
-
-        .our-services-images__content {
-            border-color: $body_color2;
-        }
-
-        .about-us__content {
-            box-shadow: 0 8px 24px 0 rgb(255 255 255 / 15%);
-        }
-
-        ._bg-theme {
-            background-color: $body_color1;
-        }
-
-        .btn__main {
-            color: $text_color2;
-            background-color: $body_color4;
-
-            &:hover,
-            &:focus-visible {
-                background-color: $text_color2;
-                color: $text_color1;
-            }
-        }
-
-        .btn__transparent {
-            color: $text_color1;
-            border-color: $text_color1;
-
-            &:hover,
-            &:focus-visible {
-                background-color: $body_color2;
-                color: $text_color2;
-
-                svg path {
-                    fill: $body_color2;
-                }
-
-                span {
-                    color: $text_color2;
-                }
-            }
-
-            svg {
-                fill: $text_color1;
-
-                path {
-                    fill: $body_color1;
-                }
-            }
-        }
-
-        .hamburger span {
-            background-color: $body_color2;
-        }
-
-        .header__fluid.-scroll {
-            &.active {
-                background-color: $body_color1;
-
-                a {
-                    color: $text_color1;
-                }
-
-                .hamburger > span {
-                    background-color: $body_color2 !important;
-                }
-            }
-
-            a,
-            span,
-            button {
-                color: $text_color2;
-            }
-
-            button {
-                border-color: $body_color1;
-            }
-
-            #switch-theme {
-                border: 1px solid $body_color1;
-            }
-
-            .hamburger {
-                background-color: $body_color2;
-
-                > span {
-                    background-color: $body_color1;
-                }
-            }
-        }
-    }
-}
-
 .container-fluid {
     --bs-gutter-x: unset;
     --bs-gutter-y: unset;
@@ -208,41 +39,11 @@ body {
 .logo {
     transition: opacity 1s ease;
     display: flex;
-    width: 153px;
-    height: 50px;
+    width: 150px;
+    height: 45px;
     padding: 0;
     margin-right: auto;
     z-index: 10;
-
-    &.-footer {
-        padding: 20px 25px;
-        background-color: $body_color4;
-        border-radius: 20px;
-
-        @media (max-width: $xl) and (min-width: $lg) {
-            padding: 20px 10px;
-        }
-    }
-
-    &__text {
-        @include column();
-        padding-left: 15px;
-
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 120%;
-        letter-spacing: 0.01em;
-
-        &.-footer {
-            color: $text_color2;
-        }
-
-        > .creative {
-            font-weight: 400;
-            font-size: 1rem;
-            letter-spacing: 0.01em;
-        }
-    }
 }
 
 html {
@@ -267,7 +68,7 @@ h1,
 h2,
 h3 {
     margin: 0;
-    font-family: "NunitoRegular", sans-serif;
+    font-family: $main-font1, sans-serif;
 }
 
 p {
@@ -292,8 +93,9 @@ textarea,
 [type="submit"],
 address,
 q {
-    font-family: "QuicksandRegular", sans-serif;
+    font-family: $main-font1, sans-serif;
     margin: 0;
+    color: $text_color2;
 }
 
 a {
