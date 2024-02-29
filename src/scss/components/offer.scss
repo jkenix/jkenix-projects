@@ -1,22 +1,21 @@
 .offer {
     &-wrap {
-        margin-bottom: 210px;
+        // margin-bottom: 140px;
+        margin-bottom: 50px;
 
         @media (max-width: $lg) {
-            margin-bottom: 0;
+            // margin-bottom: 100px;
         }
     }
 
     &-content {
         @include column();
-        align-items: center;
 
         &-wrap {
-          
         }
 
         > .title {
-            max-width: 749px;
+            max-width: 470px;
             min-height: 179px;
             min-width: 179px;
 
@@ -24,20 +23,45 @@
         }
 
         > .desc {
-            line-height: 150%;
-
+            font-size: 1.125rem;
+            line-height: 28.8px;
+            letter-spacing: 0.36px;
             text-align: start;
+            width: 495px;
+            padding-right: 15px;
 
-            @media (min-width: $sm) {
-                text-align: center;
+            @media (max-width: $lg) {
+                width: auto;
             }
         }
 
-        > .btn__main {
-            margin-top: 30px;
-            width: 201px;
+        > .btn-block {
+            display: flex;
+
+            @media (max-width: $lg) {
+                flex-direction: column;
+            }
+
+            > .btn__main {
+                margin-top: 30px;
+                margin-right: 24px;
+                width: 240px;
+            }
+
+            img {
+                @media (max-width: $lg) {
+                    display: none;
+                } 
+            }
+
+            .lg-desc {
+                color: red;
+                margin-top: 5px;
+
+                @media (min-width: $lg) {
+                    display: none;
+                }
+            }
         }
     }
-
-   
 }

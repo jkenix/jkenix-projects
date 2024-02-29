@@ -52,10 +52,18 @@ html {
 }
 
 h1 {
-    @include font-size(4rem);
-    font-weight: 800;
-    letter-spacing: 0.01em;
-    text-align: center;
+    @include font-size(3.938rem);
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.16px;
+
+    @media (max-width: $xl) {
+        @include font-size(3.8rem);
+    }
+
+    @media (max-width: $lg) {
+        line-height: 4rem;
+    }
 }
 
 h2 {
