@@ -1,0 +1,19 @@
+.elipse {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+
+    &.-offer_purple {
+        left: 0;
+        bottom: 250px;
+    }
+
+    &.-collab_yellow {
+        right: -100px;
+        bottom: 250px;
+
+        @media (max-width: $xl) {
+            right: 0;
+        }
+    }
+}

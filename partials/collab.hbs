@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="collab-wrap">
+        <div class="row">
+
+            <div class="col-lg-7">
+                <div class="collab-img">
+                    <img
+                        class="collab-img__main"
+                        src="/src/img/collab-template.png"
+                        width="498"
+                        height="471"
+                        alt="collab-template"
+                        aria-hidden="true"
+                    />
+
+                    <img
+                        class="collab-img__dop"
+                        src="/src/img/collab-invite.png"
+                        width="359"
+                        height="292"
+                        alt="collab-invite"
+                        aria-hidden="true"
+                    />
+
+                    <div class="elipse -collab_yellow">
+                        <img
+                            src="/src/img/elipse-yellow.svg"
+                            width="16"
+                            height="16"
+                            alt="elipse-yellow."
+                        />
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-5">
+                <div class="collab-content">
+
+                    <h2 class="title">Collaborate and ship designs faster</h2>
+                    <p class="desc _main-desc _st-color-3">Work on files
+                        together in real-time, and review and get feedback
+                        without the back and forth.</p>
+
+                    <div class="collab-content__preims">
+                        {{#each collab_preim}}
+                            <span class="preim">
+                                {{this}}
+                            </span>
+                        {{/each}}
+                    </div>
+
+                    <button class="btn btn__main">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

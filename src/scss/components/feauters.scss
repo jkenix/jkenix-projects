@@ -1,0 +1,39 @@
+.feauters {
+    &-wrap {
+        margin-bottom: 180px;
+
+        @media (max-width: $xl) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__title {
+        @include f-column();
+        @include f-center();
+        text-align: center;
+        margin-bottom: 35px;
+
+        > .desc {
+            max-width: 605px;
+            margin-top: 30px;
+        }
+    }
+
+    &__block {
+        @include f-column();
+        @include f-center();
+        height: 245px;
+        gap: 30px;
+
+        > .title {
+            font-size: 1.5rem;
+            line-height: 33.6px;
+            letter-spacing: 0.02px;
+            text-align: center;
+        }
+
+        @media (max-width: $sm) {
+            height: 180px;
+        }
+    }
+}

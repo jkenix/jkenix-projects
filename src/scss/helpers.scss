@@ -31,17 +31,9 @@
 }
 
 // === Text ===
-._small-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0.01em;
-}
 
 ._main-desc {
-    font-weight: 400;
-    font-size: 1.25rem;
-    letter-spacing: 0.01em;
+    line-height: 28.8px;
 }
 
 ._block-title {
@@ -62,12 +54,9 @@
 }
 
 // Text Themes
-// ._st-color-1 {
-//     color: $text_color5;
-// }
 
-._st-color-2 {
-    color: $text_color2;
+._st-color-3 {
+    color: $text_color3;
 }
 
 // ._st-color-4 {

@@ -37,7 +37,7 @@
                 }
 
                 .header__menu {
-                    padding-top: 50px;
+                    // padding-top: 50px;
                 }
 
                 .hamburger {
@@ -110,7 +110,7 @@
 
         &.active {
             @media (max-width: $lg) {
-                @include column();
+                @include f-column();
 
                 position: absolute;
                 left: 0;

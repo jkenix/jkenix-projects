@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="feauters-wrap">
+
+        <div class="feauters__title">
+            <h2 class="title">Features that get you results</h2>
+            <p class="desc _main-desc">Transform how your teams collaborate.
+                Brainstorm together, develop strategies and build ads that
+                guarantee customers.</p>
+        </div>
+
+        <div class="features__content">
+            <div class="row">
+
+                {{#each feauters}}
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="feauters__block">
+                            <img
+                                src="/src/img/icons/{{img}}.svg"
+                                width="80"
+                                height="80"
+                                alt="{{title}}"
+                                aria-hidden="true"
+                            />
+                            <span class="title">{{title}}</span>
+                        </div>
+
+                    </div>
+                {{/each}}
+
+            </div>
+        </div>
+
+    </div>
+</div>

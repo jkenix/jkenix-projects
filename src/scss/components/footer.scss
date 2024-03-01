@@ -15,7 +15,7 @@
         }
 
         &__group {
-            @include column();
+            @include f-column();
 
             &.-w_50 {
                 @media (max-width: $sm) {

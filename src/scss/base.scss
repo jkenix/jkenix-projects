@@ -67,21 +67,20 @@ h1 {
 }
 
 h2 {
-    @include font-size(3.438rem);
-    font-weight: 700;
-    letter-spacing: 0em;
+    @include font-size(2.625rem);
+    line-height: 55.68px;
+    letter-spacing: 1.44px;
 }
 
 h1,
 h2,
 h3 {
+    font-weight: 400;
     margin: 0;
     font-family: $main-font1, sans-serif;
 }
 
 p {
-    max-width: 750px;
-
     @media (max-width: $lg) {
         font-size: 1rem !important;
     }

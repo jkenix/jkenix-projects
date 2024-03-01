@@ -33,6 +33,53 @@ export default defineConfig({
             context: {
                 title: "Make your dream business goal come true",
                 menu: ["Features", "About", "Pricing", "Blog", "Contact"],
+                partners: [
+                    "logoipsum",
+                    "logoipsum-2",
+                    "logoipsum-3",
+                    "logoipsum-4",
+                    "logoipsum-5",
+                    "logoipsum-6",
+                ],
+                feauters: [
+                    {
+                        img: "feauters1",
+                        title: "Live Collaboration",
+                    },
+                    {
+                        img: "feauters2",
+                        title: "1M+ Templates",
+                    },
+                    {
+                        img: "feauters3",
+                        title: "Searchable Assets",
+                    },
+                    {
+                        img: "feauters4",
+                        title: "Unlimited Reviewers",
+                    },
+                    {
+                        img: "feauters5",
+                        title: "Notifications",
+                    },
+                    {
+                        img: "feauters6",
+                        title: "Responsive Design",
+                    },
+                    {
+                        img: "feauters7",
+                        title: "Multiple media support",
+                    },
+                    {
+                        img: "feauters8",
+                        title: "Version history",
+                    },
+                ],
+                collab_preim: [
+                    "Produce more ads without spending more time",
+                    "Get notified about comments and status updates",
+                    "Have one single source of truth for all design",
+                ],
             },
             helpers: {},
             partialDirectory: resolve(__dirname, "partials"),

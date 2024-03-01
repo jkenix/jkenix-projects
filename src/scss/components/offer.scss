@@ -1,15 +1,16 @@
 .offer {
     &-wrap {
         // margin-bottom: 140px;
-        margin-bottom: 50px;
+        margin-top: 90px;
+        margin-bottom: 140px;
 
         @media (max-width: $lg) {
-            // margin-bottom: 100px;
+            margin-bottom: 100px;
         }
     }
 
     &-content {
-        @include column();
+        @include f-column();
 
         &-wrap {
         }
@@ -24,15 +25,7 @@
 
         > .desc {
             font-size: 1.125rem;
-            line-height: 28.8px;
-            letter-spacing: 0.36px;
-            text-align: start;
-            width: 495px;
             padding-right: 15px;
-
-            @media (max-width: $lg) {
-                width: auto;
-            }
         }
 
         > .btn-block {
@@ -51,7 +44,7 @@
             img {
                 @media (max-width: $lg) {
                     display: none;
-                } 
+                }
             }
 
             .lg-desc {
@@ -62,6 +55,55 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    &-images {
+        display: flex;
+        position: relative;
+        max-width: 600px;
+        height: 600px;
+        justify-content: center;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+
+        > .main-img {
+            z-index: 5;
+        }
+
+        > img {
+            z-index: 10;
+        }
+    }
+
+    &__img {
+        position: absolute;
+
+        &.-img_1 {
+            width: 90px;
+            height: 90px;
+            left: 0;
+            top: 100px;
+        }
+
+        &.-img_2 {
+            width: 90px;
+            height: 90px;
+            right: 0;
+            top: -40px;
+        }
+
+        &.-img_3 {
+            top: 140px;
+            right: 0;
+            z-index: 15;
+        }
+
+        &.-img_4 {
+            bottom: 0;
+            left: 0;
         }
     }
 }
