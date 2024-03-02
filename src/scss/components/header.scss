@@ -17,10 +17,23 @@
                 .logo {
                     pointer-events: none;
                 }
+
+                .cart {
+                    top: 100px;
+                    right: 0;
+                    visibility: visible;
+                }
             }
         }
 
         &.-scroll {
+
+            &.active {
+                .cart {
+                    visibility: visible;
+                }
+            }
+
             @media (min-width: $lg) {
                 background-color: $body_color1;
             }
@@ -32,7 +45,9 @@
                 }
 
                 .cart {
-                    opacity: 0;
+                    top: auto;
+                    left: 30px;
+                    max-width: max-content;
                     visibility: hidden;
                 }
 
@@ -63,8 +78,8 @@
     &__wrap {
         display: flex;
         align-items: center;
-        padding-top: 72px;
-        padding-bottom: 68px;
+        padding-top: 28px;
+        padding-bottom: 28px;
         width: auto;
         height: 49px;
 
@@ -87,10 +102,6 @@
         @media (max-width: $lg) {
             display: none;
         }
-
-        // > #home-link {
-        //     font-weight: 700;
-        // }
 
         > .nav-item {
             margin-right: 50px;

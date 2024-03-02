@@ -1,11 +1,10 @@
 .offer {
     &-wrap {
-        // margin-bottom: 140px;
         margin-top: 90px;
         margin-bottom: 140px;
 
         @media (max-width: $lg) {
-            margin-bottom: 100px;
+            margin-top: 50px;
         }
     }
 

@@ -31,7 +31,6 @@ export default defineConfig({
         viteHtmlResolveAlias(),
         handlebars({
             context: {
-                title: "Make your dream business goal come true",
                 menu: ["Features", "About", "Pricing", "Blog", "Contact"],
                 partners: [
                     "logoipsum",

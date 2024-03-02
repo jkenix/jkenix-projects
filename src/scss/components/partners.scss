@@ -2,10 +2,6 @@
     &-wrap {
         margin-bottom: 150px;
 
-        @media (max-width: $lg) {
-        margin-bottom: 100px;
-        }
-
         > .title {
             font-size: 1.375rem;
             line-height: 31.2px;
