@@ -47,7 +47,7 @@
             }
 
             .lg-desc {
-                color: red;
+                color: $elem-color1;
                 margin-top: 5px;
 
                 @media (min-width: $lg) {

@@ -5,6 +5,7 @@
     padding: 5px;
     margin-right: 15px;
     transition: opacity 1s ease;
+    z-index: 30;
 
     &:hover,
     &:focus-visible {
