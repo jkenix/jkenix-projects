@@ -1,15 +1,12 @@
-.collab {
+.b-impact {
     &-wrap {
-        height: 600px;
         margin-bottom: 200px;
 
-        @media (max-width: $lg) {
-            height: auto;
-        }
     }
 
     &-img {
         position: relative;
+        display: flex;
 
         @media (max-width: $lg) {
             display: none;
@@ -17,23 +14,31 @@
 
         &__main {
             z-index: 5;
-            position: relative;
+            position: absolute;
+            transform: translate(45%, -5%);
+
+            @media (max-width: $xxl) {
+                transform: translate(15%, -5%);
+            }
+
+            @media (max-width: $xl) {
+                transform: translate(-15%, -5%);
+            }
         }
 
         &__dop {
-            position: absolute;
+            position: relative;
+            margin-left: auto;
             z-index: 10;
-            transform: translate(-60%, 100%);
-
-            @media (max-width: $xl) {
-                transform: translate(-90%, 100%);
-            }
+            top: -100px;
+            right: 0;
         }
     }
 
     &-content {
         position: relative;
         z-index: 20;
+        max-width: 432px;
 
         > .title {
             margin-bottom: 25px;
@@ -43,18 +48,6 @@
             font-size: 1.125rem;
             letter-spacing: 0.36px;
             line-height: 28.8px;
-        }
-
-        &__preims {
-            @include f-column();
-            gap: 15px;
-            margin-top: 35px;
-            margin-left: 35px;
-            margin-bottom: 50px;
-
-            @media (max-width: $xl) {
-                margin-left: 0;
-            }
         }
     }
 }

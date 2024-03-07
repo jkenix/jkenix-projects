@@ -4,7 +4,9 @@
 }
 
 ._main-wrap {
-    margin-bottom: 50px !important;
+    @media (max-width: $lg) {
+        margin-bottom: 50px !important;
+    }
 }
 
 ._scroll {
