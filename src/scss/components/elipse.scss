@@ -11,9 +11,14 @@
     &.-collab_yellow {
         right: -100px;
         bottom: 250px;
+    }
 
-        @media (max-width: $xl) {
-            right: 0;
+    &.-b-impact_yellow {
+        right: 50px;
+        bottom: -40px;
+
+        @media (max-width: $lg) {
+            display: none;
         }
     }
 }

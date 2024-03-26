@@ -1,7 +1,5 @@
 .b-impact {
     &-wrap {
-        margin-bottom: 200px;
-
     }
 
     &-img {
@@ -40,14 +38,33 @@
         z-index: 20;
         max-width: 432px;
 
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+
         > .title {
             margin-bottom: 25px;
         }
 
-        > .desc {
-            font-size: 1.125rem;
+        &__review {
+            @include f-row();
+            gap: 24px;
+            margin: 35px 0 35px;
+
+            @media (max-width: $sm) {
+                margin: 25px 0 25px;
+                flex-direction: column;
+            }
+        }
+
+        &__review-text {
+            font-size: 1rem;
+            line-height: 25.2px;
             letter-spacing: 0.36px;
-            line-height: 28.8px;
+        }
+
+        &__review-name {
+            margin-top: 15px;
         }
     }
 }

@@ -4,6 +4,8 @@
 }
 
 ._main-wrap {
+    margin-bottom: 100px !important;
+
     @media (max-width: $lg) {
         margin-bottom: 50px !important;
     }
@@ -39,6 +41,8 @@
 // === Text ===
 
 ._main-desc {
+    font-size: 1.125rem;
+    letter-spacing: 0.36px;
     line-height: 28.8px;
 }
 

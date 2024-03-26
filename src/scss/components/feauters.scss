@@ -1,13 +1,12 @@
 .feauters {
     &-wrap {
-        margin-bottom: 180px;
     }
 
     &__title {
         @include f-column();
         @include f-center();
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
 
         > .desc {
             max-width: 605px;
@@ -20,6 +19,7 @@
         @include f-center();
         height: 245px;
         gap: 30px;
+        transition: all ease 0.5s;
 
         > .title {
             font-size: 1.5rem;

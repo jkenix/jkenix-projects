@@ -6,7 +6,7 @@
     "es2022": true // Глобальные переменные ECMAScript 2022
   },
   // Использование плагинов
-  // Поддержка работы с Eslint, Pretteir и React
+  // Поддержка работы с Eslint, Pretteir
   "extends": ["eslint:recommended", "prettier"],
   "overrides": [],
   "parserOptions": {
