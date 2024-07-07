@@ -18,5 +18,4 @@
 
 ---
 
-- [jkenix-projects.pages.dev/](jkenix-projects.pages.dev/) - it's **TEST PAGE LINK** for current projects.   
 - **Main** is a branch of the current development. 👨🏻‍💻 
