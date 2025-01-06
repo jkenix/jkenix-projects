@@ -1,4 +1,4 @@
-# Actual Jkenix's study projects catalog of web development. ⚡   
+# My actual study projects catalog of web development. ⚡   
 
 [Latest finished project](https://github.com/jkenix/jkenix-projects/tree/creative-agency) ✅
 
