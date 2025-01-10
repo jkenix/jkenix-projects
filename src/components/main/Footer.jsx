@@ -111,8 +111,8 @@ export default function Footer() {
       </div>
 
 
-      <div className="l-footer-bottom">
-        <p style={{color: "#e5e5e5"}}>Это сайт придуманной несуществующещй организации, сделанный как проект для защиты диплома. Все совпадения с реальными организациями случайны!</p>
+      <div className="l-footer-bottom" style={{marginRight: "25px"}}>
+        <p style={{color: "#e5e5e5"}}>Это сайт придуманной несуществующей организации, сделанный как проект для защиты диплома. Все совпадения с реальными организациями случайны!</p>
         <p style={{color: "#e5e5e5"}}>В случае претензий обращайтесь к <a href="https://github.com/jkenix" style={{color: "#ff5c66"}} >автору сайта.</a></p>
       </div>
 
