@@ -3,7 +3,6 @@
     "@popperjs/core": "^2.11.5",
     "http": "^0.0.1-security",
     "js": "^0.1.0",
-    "node-sass": "^7.0.1",
     "sass-convert": "^0.5.2"
   },
   "devDependencies": {
@@ -71,8 +70,8 @@
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "react-snap": "^1.23.0",
-    "sass": "^1.58.0",
-    "sass-loader": "^13.2.0",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4",
     "semver-regex": "^4.0.5",
     "serialize-javascript": "^6.0.1",
     "sharp": "^0.31.3",

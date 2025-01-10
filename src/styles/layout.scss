@@ -1,12 +1,12 @@
 // Import mixins, variables
-@import "mixins_var.scss";
+@use "mixins_var.scss" as m;
 /* === Классы макетов === */
 .l-wrapper {
   max-width: 1920px;
   margin: 0 auto;
 }
 .l-preloader {
-  @include flexcolumn();
+  @include m.flexcolumn();
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
@@ -255,18 +255,18 @@
   margin-bottom: 100px;
 }
 .l-feni-service {
-  border: 1px solid $b41;
+  border: 1px solid m.$b41;
   padding: 40px;
   &:hover,
   &:focus-visible {
-    outline: $ff5;
-    border: 1px solid $ff5;
+    outline: m.$ff5;
+    border: 1px solid m.$ff5;
     > .feni-check {
       > span {
-        color: $ff5;
+        color: m.$ff5;
       }
       > svg path {
-        stroke: $ff5;
+        stroke: m.$ff5;
       }
     }
   }
@@ -301,8 +301,8 @@
   > .btn-bw41 {
     &:hover,
     &:focus-visible {
-      color: $wff;
-      background-color: $ff5;
+      color: m.$wff;
+      background-color: m.$ff5;
     }
   }
 }
@@ -383,9 +383,9 @@
   padding: 20px;
   border: 1px solid #cfcece;
   &:hover {
-    border-color: $b41;
+    border-color: m.$b41;
     > .btn-order {
-      background-color: $b41;
+      background-color: m.$b41;
       color: #e5e5e5;
     }
     // Наведение на before
@@ -473,7 +473,7 @@
   }
   &:hover {
     > span {
-      color: $wff;
+      color: m.$wff;
     }
   }
 }
@@ -500,7 +500,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: $b41;
+    background-color: m.$b41;
   }
 }
 .l-order-form {
@@ -512,7 +512,7 @@
   padding-top: 50px;
   padding-bottom: 30px;
   > .section-title {
-    color: $we5;
+    color: m.$we5;
     margin-bottom: 30px;
   }
   > .l-feedback-row {
@@ -562,7 +562,7 @@
 .l-footer {
   padding-top: 70px;
   padding-bottom: 40px;
-  @include flexcolumn();
+  @include m.flexcolumn();
 }
 .l-footer-content {
   display: flex;
@@ -577,7 +577,7 @@
     padding: 0;
   }
   > .fc-links {
-    @include flexcolumn();
+    @include m.flexcolumn();
     padding-left: 0;
     padding-right: 31px;
   }
@@ -608,7 +608,7 @@
 // Политика Конфиденциальности
 // Публичная оферта
 .l-policy {
-  @include flexcolumn();
+  @include m.flexcolumn();
 }
 .l-privacy-policy,
 .l-public-offer {

@@ -62,9 +62,6 @@ export default function Contacts() {
                   <a href="#" title="Группа в Telegram">
                     <img src={telegram} width="40" height="40" alt="Telegram" />
                   </a>
-                  <a href="#" title="Связь в Whatsapp">
-                    <img src={wapp} width="40" height="40" alt="Whatsapp" />
-                  </a>
                 </div>
               </div>
             </div>

@@ -1,48 +1,48 @@
 // Import mixins
-@import "mixins_var.scss";
+@use "mixins_var.scss" as m;
 /* Классы тем */
 // Общие тэги
 span,
 a {
-  color: $b1;
+  color: m.$b1;
 }
 // === Body ===
 body {
-  background-color: $we5;
+  background-color: m.$we5;
 }
 // === Общие классы кнопок ===
 .btn-b41 {
-  color: $wff;
-  background-color: $b41;
+  color: m.$wff;
+  background-color: m.$b41;
   &:hover,
   &:focus-visible {
-    background-color: $ff5;
+    background-color: m.$ff5;
   }
 }
 .btn-bw41 {
-  color: $b1;
-  background-color: $we5;
-  border: 1px solid $b41;
+  color: m.$b1;
+  background-color: m.$we5;
+  border: 1px solid m.$b41;
   &:hover,
   &:focus-visible {
-    background-color: $b41;
-    color: $we5;
+    background-color: m.$b41;
+    color: m.$we5;
   }
 }
 // === Home/Portfolio кнопки ===
 .btn-tab {
-  background-color: $we5;
-  color: $b1;
+  background-color: m.$we5;
+  color: m.$b1;
   &:hover,
   &:focus-visible {
-    color: $ff5;
+    color: m.$ff5;
     span {
-      color: $ff5;
+      color: m.$ff5;
     }
   }
 }
 .btn-tab-link {
-  color: $ff5;
+  color: m.$ff5;
 }
 // Forms
 .l-client-info > .label-required {
@@ -50,13 +50,13 @@ body {
 }
 .label-feedback,
 .form-input {
-  color: $we5;
+  color: m.$we5;
 }
 .form-input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid $we5;
+  border-bottom: 1px solid m.$we5;
 }
 [class="form-input"]:invalid {
   border-bottom: 1px solid red;
@@ -69,34 +69,34 @@ body {
 .section-title,
 .section-desc,
 .small-section {
-  color: $b1;
+  color: m.$b1;
 }
 // === Header ===
 .l-header {
-  background-color: $we5;
+  background-color: m.$we5;
 }
 .disc-head > .feni-tel,
 .header-menu > a {
-  color: $b1;
+  color: m.$b1;
   &:hover,
   &:focus-visible {
-    color: $ff5;
+    color: m.$ff5;
   }
 }
 .nav-is-active {
-  background-color: $b41;
+  background-color: m.$b41;
   & > a {
-    color: $wff;
+    color: m.$wff;
   }
 }
 // === Main ===
 .l-main {
-  background-color: $we5;
+  background-color: m.$we5;
 }
 // === Briefs ===
 .fb-info {
   > .fb-title {
-    color: $b1;
+    color: m.$b1;
   }
   // Focus fb-info
   &:hover,
@@ -104,33 +104,33 @@ body {
     > .fb-count,
     > .fb-title,
     > .fb-desc {
-      color: $ff5;
+      color: m.$ff5;
     }
     > .fb-desc::before {
-      background-color: $ff5;
+      background-color: m.$ff5;
     }
   }
 }
 // === Discuss ===
 .l-feni-discuss-project {
-  background-color: $b41;
+  background-color: m.$b41;
 }
 .l-fdp-content-info {
   > .fdp-title,
   > .fdp-desc {
-    color: $we5;
+    color: m.$we5;
   }
 }
 .feni-checkbox-agree {
-  color: $we5;
+  color: m.$we5;
 }
 .feedback-btn {
-  color: $we5;
-  background-color: $ff5;
+  color: m.$we5;
+  background-color: m.$ff5;
   &:hover,
   &:focus-visible {
-    background-color: $we5;
-    color: $b41;
+    background-color: m.$we5;
+    color: m.$b41;
   }
 }
 // Общие модули для формы
@@ -146,32 +146,32 @@ body {
 }
 // === Work-desc === (Main, Portfolio)
 .work-desc {
-  background-color: $b41;
+  background-color: m.$b41;
   > .work-desc-title,
   > .work-desc-info {
-    color: $we5;
+    color: m.$we5;
   }
 }
 // === About ===
 .skill-num {
-  color: $ff5;
+  color: m.$ff5;
 }
 // === Contacts ===
 .contacts-link {
-  color: $b1;
+  color: m.$b1;
 }
 // === Footer ===
 .l-footer {
-  background-color: $b1;
+  background-color: m.$b1;
 }
 .footer-links-title,
 .footer-link {
-  color: $we5;
+  color: m.$we5;
 }
 .l-footer-links-title {
-  color: $we5;
+  color: m.$we5;
 }
 .l-footer-bottom > span,
 .l-footer-bottom > .footer-link {
-  color: $we5;
+  color: m.$we5;
 }

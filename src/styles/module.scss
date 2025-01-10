@@ -1,5 +1,5 @@
 // Import mixins, variables
-@import "mixins_var.scss";
+@use "mixins_var.scss" as m;
 // === Section title, desc ===
 // H1
 .section-main-title {
@@ -42,7 +42,7 @@
     }
     &:hover,
     &:focus-visible {
-      color: $ff5;
+      color: m.$ff5;
     }
   }
 }
@@ -70,7 +70,7 @@
   height: 5px;
   position: relative;
   border-radius: 2px;
-  background-color: $b1;
+  background-color: m.$b1;
   transition: all 0.4s;
   &:nth-child(1) {
     top: 0px;
@@ -139,7 +139,7 @@
     padding-left: 100px;
     &::before {
       content: "";
-      background-color: $b1;
+      background-color: m.$b1;
       position: absolute;
       left: 0;
       height: 1px;
@@ -234,7 +234,7 @@
 .pd-num {
   font-weight: 900;
   font-size: 4.375rem;
-  -webkit-text-stroke: 0.007em $b41;
+  -webkit-text-stroke: 0.007em m.$b41;
   color: transparent;
 }
 .process-dev-content {
@@ -276,7 +276,7 @@
   letter-spacing: 0.02em;
   &:hover,
   &:focus-visible {
-    color: $ff5;
+    color: m.$ff5;
   }
 }
 // === Footer ===
@@ -292,7 +292,7 @@
   letter-spacing: 0.02em;
   &:hover,
   &:focus-visible {
-    color: $ff5;
+    color: m.$ff5;
   }
 }
 .footer-links-title,

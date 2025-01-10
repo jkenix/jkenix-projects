@@ -1,5 +1,5 @@
 // Import mixins, variables
-@import "mixins_var.scss";
+@use "mixins_var.scss" as m;
 /* Состояние модулей (Анимация и подсветка) */
 // === Body ===
 .overflow-is-hidden {
@@ -45,17 +45,17 @@
 .nav-item,
 .btn-tab {
   &.active {
-    color: $ff5;
+    color: m.$ff5;
     span {
-      color: $ff5;
+      color: m.$ff5;
     }
   }
 }
 // === Header ===
 .head-is-switch {
-  background-color: $b41;
+  background-color: m.$b41;
   .logo {
-    background-color: $wff;
+    background-color: m.$wff;
     height: 67px;
     padding-top: 2px;
     pointer-events: none;
@@ -63,7 +63,7 @@
   }
 }
 .ham-is-active > span {
-  background-color: $wff;
+  background-color: m.$wff;
   transition: all 0.4s;
   &:nth-of-type(1) {
     animation: span1 0.2s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -86,7 +86,7 @@
   animation: fadeMe 300ms linear forwards;
   animation-name: menuAnim;
   align-items: center;
-  @include flexcolumn();
+  @include m.flexcolumn();
   justify-content: flex-start;
   margin: 0;
   padding-top: 67px;
@@ -140,7 +140,7 @@
   cursor: pointer;
   &:hover {
     svg path {
-      stroke: $b1;
+      stroke: m.$b1;
     }
   }
 }

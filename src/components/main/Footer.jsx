@@ -5,6 +5,7 @@ import logo from "../../img/feni-logo.svg";
 import vklogo from "../../img/vk-logo.svg";
 import telegram from "../../img/telegram-logo.svg";
 import wapp from "../../img/wapp-logo.svg";
+import { color } from "framer-motion";
 // Компонент нижней части страницы
 export default function Footer() {
   return (
@@ -83,9 +84,6 @@ export default function Footer() {
             <a href="#" title="Группа в Telegram">
               <img src={telegram} width="25" height="25" alt="Telegram" />
             </a>
-            <a href="#" title="Связь в Whatsapp">
-              <img src={wapp} width="25" height="25" alt="Whatsapp" />
-            </a>
           </div>
         </div>
       </div>
@@ -109,7 +107,15 @@ export default function Footer() {
           title="Github Profile">
           Creator Github Profile
         </a>
+
       </div>
+
+
+      <div className="l-footer-bottom">
+        <p style={{color: "#e5e5e5"}}>Это сайт придуманной несуществующещй организации, сделанный как проект для защиты диплома. Все совпадения с реальными организациями случайны!</p>
+        <p style={{color: "#e5e5e5"}}>В случае претензий обращайтесь к <a href="https://github.com/jkenix" style={{color: "#ff5c66"}} >автору сайта.</a></p>
+      </div>
+
     </footer>
   );
 }

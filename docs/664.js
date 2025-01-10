@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[664],{3387:(p,s,e)=>{p.exports=e.p+"img/telegram-logo.svg"},1771:(p,s,e)=>{p.exports=e.p+"img/vk-logo.svg"},3264:(p,s,e)=>{p.exports=e.p+"img/wapp-logo.svg"}}]);
