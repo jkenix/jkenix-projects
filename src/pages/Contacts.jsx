@@ -41,8 +41,8 @@ export default function Contacts() {
             <div className="fcon-content">
               <div className="contact-info mail">
                 <h2 className="contacts-title small-section">Телефон</h2>
-                <a href="tel:+7-963-728-66-90" className="contacts-link">
-                  +7-963-728-66-90
+                <a href="tel:+7-xxx-xxx-xx-xx" className="contacts-link">
+                  +7-xxx-xxx-xx-xx
                 </a>
               </div>
               <div className="contact-info num">

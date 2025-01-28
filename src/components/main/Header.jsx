@@ -56,10 +56,10 @@ export default function Header() {
           </nav>
           <div className="disc-head">
             <a
-              href="tel:+7-963-728-66-90"
+              href="tel:+7-xxx-xxx-xx-xx"
               className="feni-tel"
               title="Позвонить">
-              +7-963-728-66-90
+              +7-xxx-xxx-xx-xx
             </a>
             <a href="#discuss" className="btn-head btn-link btn-b41 ">
               Обсудить проект
