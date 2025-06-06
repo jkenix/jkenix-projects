@@ -1,0 +1,87 @@
+// Global
+._overflow-is-hidden {
+    overflow: hidden;
+}
+
+._main-wrap {
+    margin-bottom: 100px !important;
+
+    @media (max-width: $lg) {
+        margin-bottom: 50px !important;
+    }
+}
+
+._scroll {
+    opacity: 0.9;
+}
+
+// Box-shadows
+._btn-bs {
+    box-shadow: $box-shadow1;
+}
+
+._bs-2 {
+    box-shadow: $box-shadow2;
+}
+
+._elipse-bs {
+    box-shadow: $box-shadow3;
+}
+
+// Position
+._m-0-auto {
+    margin: 0 auto;
+}
+
+// Visibility
+._op-05 {
+    opacity: 0.5;
+}
+
+// === Text ===
+
+._main-desc {
+    font-size: 1.125rem;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+}
+
+._block-title {
+    font-weight: 700;
+    @include font-size(3.438rem);
+    letter-spacing: 0em;
+}
+
+._t-center {
+    text-align: center;
+}
+
+._underline {
+    &:hover,
+    &:focus-visible {
+        text-decoration: underline;
+    }
+}
+
+// Text Themes
+
+._st-color-3 {
+    color: $text_color3;
+}
+
+// ._st-color-4 {
+//     color: $text_color4;
+// }
+
+// === Images ===
+._img__resp-block {
+    display: flex;
+    transition: all ease 0.5s;
+
+    > img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

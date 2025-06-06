@@ -1,0 +1,137 @@
+// Global selectors styles
+@font-face {
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+    font-family: $main-font1;
+    src: url(/webfonts/PlusJakartaSansRegular.woff) format("woff");
+}
+
+// For check outlines
+// * {
+//     outline: 1px solid red;
+// }
+
+// Global elements
+.container-fluid {
+    --bs-gutter-x: unset;
+    --bs-gutter-y: unset;
+}
+
+.container {
+    box-sizing: border-box;
+
+    // @media (max-width: $xxl) and (min-width: $xl) {
+    //     max-width: 1185px;
+    // }
+
+    // @media (max-width: $xl) and (min-width: $lg) {
+    //     max-width: 980px;
+    // }
+
+    // @media (max-width: $lg) and (min-width: $md) {
+    //     max-width: 735px;
+    // }
+    // @media (max-width: $md) and (min-width: $sm) {
+    //     max-width: 540px;
+    // }
+}
+
+.logo {
+    transition: opacity 1s ease;
+    display: flex;
+    width: 150px;
+    height: 45px;
+    padding: 0;
+    margin-right: auto;
+    z-index: 10;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0%;
+}
+
+h1 {
+    @include font-size(3.938rem);
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.16px;
+
+    @media (max-width: $xl) {
+        @include font-size(3.8rem);
+    }
+
+    @media (max-width: $lg) {
+        line-height: 4rem;
+    }
+}
+
+h2 {
+    @include font-size(2.625rem);
+    line-height: 55.68px;
+    letter-spacing: 1.44px;
+
+    @media (max-width: $lg) {
+        line-height: 3rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    margin: 0;
+    font-family: $main-font1, sans-serif;
+}
+
+p {
+    @media (max-width: $lg) {
+        font-size: 1rem !important;
+    }
+}
+
+div,
+p,
+a,
+ul,
+li,
+span,
+button,
+label,
+input,
+input::placeholder,
+textarea,
+[type="submit"],
+address,
+q {
+    font-family: $main-font1, sans-serif;
+    margin: 0;
+    color: $text_color2;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+[type="submit"] {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+    font-size: 1.5rem;
+}

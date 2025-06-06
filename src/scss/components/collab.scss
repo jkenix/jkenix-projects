@@ -1,0 +1,53 @@
+.collab {
+    &-wrap {
+        height: 600px;
+        margin-bottom: 200px;
+
+        @media (max-width: $lg) {
+            height: auto;
+        }
+    }
+
+    &-img {
+        position: relative;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+
+        &__main {
+            z-index: 5;
+            position: relative;
+        }
+
+        &__dop {
+            position: absolute;
+            z-index: 10;
+            transform: translate(-60%, 100%);
+
+            @media (max-width: $xl) {
+                transform: translate(-90%, 100%);
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 20;
+
+        > .title {
+            margin-bottom: 25px;
+        }
+
+        &__preims {
+            @include f-column();
+            gap: 15px;
+            margin: 35px 35px 35px 0;
+
+            @media (max-width: $xl) {
+                margin: 25px 0 25px;
+                margin-left: 0;
+            }
+        }
+    }
+}

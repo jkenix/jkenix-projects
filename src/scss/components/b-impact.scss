@@ -1,0 +1,70 @@
+.b-impact {
+    &-wrap {
+    }
+
+    &-img {
+        position: relative;
+        display: flex;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+
+        &__main {
+            z-index: 5;
+            position: absolute;
+            transform: translate(45%, -5%);
+
+            @media (max-width: $xxl) {
+                transform: translate(15%, -5%);
+            }
+
+            @media (max-width: $xl) {
+                transform: translate(-15%, -5%);
+            }
+        }
+
+        &__dop {
+            position: relative;
+            margin-left: auto;
+            z-index: 10;
+            top: -100px;
+            right: 0;
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 20;
+        max-width: 432px;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+
+        > .title {
+            margin-bottom: 25px;
+        }
+
+        &__review {
+            @include f-row();
+            gap: 24px;
+            margin: 35px 0 35px;
+
+            @media (max-width: $sm) {
+                margin: 25px 0 25px;
+                flex-direction: column;
+            }
+        }
+
+        &__review-text {
+            font-size: 1rem;
+            line-height: 25.2px;
+            letter-spacing: 0.36px;
+        }
+
+        &__review-name {
+            margin-top: 15px;
+        }
+    }
+}
