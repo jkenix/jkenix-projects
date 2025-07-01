@@ -24,7 +24,7 @@ export default function Order_Form(props) {
         <Form
           class="l-order-form l-feni-form"
           initial={{ y: -100, opacity: 0 }}
-          form_link_service="https://formspree.io/f/moqzyjjq"
+          form_link_service=""
           title={props.form_title}
           value={props.form_service_name}
           textarea_rows={props.textarea_rows_value}

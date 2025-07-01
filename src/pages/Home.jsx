@@ -139,7 +139,7 @@ export default function Home() {
             </p>
             <div className="feni-briefs-content">
               <a
-                href="https://forms.gle/neVqs5xMX5GU2nbT6"
+                href=""
                 className="fb-info l-fm fbi-main">
                 <span className="fb-count small-section">01</span>
                 <span className="fb-title">Веб-сайт</span>
@@ -148,7 +148,7 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="https://forms.gle/Tvioeac6DhDZxu9N9"
+                href=""
                 className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">02</span>
                 <span className="fb-title">Лого</span>
@@ -157,7 +157,7 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="https://forms.gle/G1F61kMXz7n8ZJhh7"
+                href=""
                 className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">03</span>
                 <span className="fb-title">Иллюстрация</span>
@@ -166,7 +166,7 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="https://forms.gle/Kf5J7RAoe2ZuEigc7"
+                href=""
                 className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">04</span>
                 <span className="fb-title">Презентация</span>
@@ -175,7 +175,7 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="https://forms.gle/BzdVa4kz1FFwy36P7"
+                href=""
                 className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">05</span>
                 <span className="fb-title">Айдентика</span>

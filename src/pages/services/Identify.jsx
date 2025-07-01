@@ -23,7 +23,7 @@ const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
 import { TabList_main, Slider_settings } from "../../js/data.jsx";
 // Компонент страницы "Айдентика" в сервисах
 export default function Identify(props) {
-  const card_link = "https://forms.gle/BzdVa4kz1FFwy36P7"; // Ссылка на гугл форму
+  const card_link = ""; // Ссылка на гугл форму
   // Функция вызова галочки в описаниях к услуге
   function Check() {
     return <img src={checkbox} width="15" height="15" alt="checkbox" />;

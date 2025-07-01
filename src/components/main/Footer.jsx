@@ -26,27 +26,27 @@ export default function Footer() {
           <h3 className="footer-links-title small-section">Брифы</h3>
           <div className="footer-links feni-links">
             <a
-              href="https://forms.gle/neVqs5xMX5GU2nbT6"
+              href=""
               className="footer-link">
               Бриф на разработку веб-сайта
             </a>
             <a
-              href="https://forms.gle/Tvioeac6DhDZxu9N9"
+              href=""
               className="footer-link">
               Бриф на разработку логотипа
             </a>
             <a
-              href="https://forms.gle/G1F61kMXz7n8ZJhh7"
+              href=""
               className="footer-link">
               Бриф на разработку иллюстрации
             </a>
             <a
-              href="https://forms.gle/Kf5J7RAoe2ZuEigc7"
+              href=""
               className="footer-link">
               Бриф на разработку презентации
             </a>
             <a
-              href="https://forms.gle/BzdVa4kz1FFwy36P7"
+              href=""
               className="footer-link">
               Бриф на разработку айдентики
             </a>

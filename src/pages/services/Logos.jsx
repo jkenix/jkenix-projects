@@ -23,7 +23,7 @@ const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
 import { TabList_main, Slider_settings } from "../../js/data.jsx";
 // Компонент страницы "Логотипы" в сервисах
 export default function Logos() {
-  const card_link = "https://forms.gle/Tvioeac6DhDZxu9N9"; // Ссылка на гугл форму
+  const card_link = ""; // Ссылка на гугл форму
   // Функция вызова галочки в описаниях к услуге
   function Check() {
     return <img src={checkbox} width="15" height="15" alt="checkbox" />;

@@ -31,7 +31,7 @@ export default function Discuss(props) {
           <Form
             class="l-fdp-content-form l-feni-form"
             initial={{ y: 100, opacity: 0 }}
-            form_link_service="https://formspree.io/f/mgebyljo"
+            form_link_service=""
           />
         </div>
       </section>
